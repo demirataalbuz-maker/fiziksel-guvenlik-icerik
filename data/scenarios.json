@@ -152,6 +152,46 @@
       "source": "https://www.sans.org/",
       "source_id": "",
       "truth": "composite"
+    },
+    {
+      "id": "SC-0009",
+      "day": "2026-10-01",
+      "title": "Gece kör kalan otopark kamerası",
+      "area": "FZ06",
+      "truth": "composite",
+      "level": "core",
+      "story": "Bir lojistik firmasının yazılı yetkisiyle yapılan gece değerlendirmesinde ekip, otopark girişindeki tek IR kameranın kapsamını inceledi. Kamera gündüz kapı ve bariyeri net görüyordu. Gece ise kameranın hemen önündeki yansıtıcı tabela kendi IR ışığını geri yansıtıp görüntünün alt yarısını beyaza boyuyordu. Bariyerin yanındaki yaya boşluğu bu beyaz alanda kalıyordu. Kayıt incelemesinde, önceki haftalarda bu bölgeden geçen kişilerin hiçbirinin tanınamadığı görüldü. Kayıt cihazı bu durumu bir arıza olarak hiç raporlamamıştı.",
+      "steps": [
+        "Kamera kapsamını gündüz ve gece ayrı ayrı belgele",
+        "Gece kaydında görüntü kalitesini ve kör bölgeleri işaretle",
+        "Kör bölgenin hangi geçiş noktasıyla çakıştığını haritaya geçir",
+        "Bulguyu kişileri maskeleyerek rapora ekle"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ06 (gözetim): Kamera teknik olarak çalışıyor ama gece kendi IR'sinin yansımasıyla doyuyor; kör bölge tam olarak bir geçiş noktasına denk geliyor. Sistem görüntü kalitesini izlemediği için sorun haftalarca fark edilmedi. 'Kamera var' ile 'kamera kanıt üretiyor' aynı şey değil.",
+      "lesson": "Kameralar gece de test edilmeli; yansıtıcı yüzeyler IR görüş alanından çıkarılmalı; geçiş noktaları birbirini kapsayan iki kamerayla izlenmeli; VMS'te görüntü kalitesi/doyum analitiği açılmalı.",
+      "source": "https://en.wikipedia.org/wiki/Closed-circuit_television",
+      "source_id": ""
+    },
+    {
+      "id": "SC-0010",
+      "day": "2026-10-01",
+      "title": "Drone'u gördüler, kimin olduğunu bilmediler",
+      "area": "FZ01",
+      "truth": "composite",
+      "level": "core",
+      "story": "Bir veri merkezinin savunma ekibi, yetkili bir tatbikat sırasında çatı üzerinde kısa süre asılı kalan bir drone fark etti. Güvenlik görevlisi drone'u gözle gördü ve telsizle bildirdi ama kaydı yalnızca 'bir drone geçti' diye tutuldu. Tesiste Remote ID yayınlarını dinleyen bir alıcı yoktu; bu yüzden drone'un kimliği ve operatörün yaklaşık konumu hiç belirlenmedi. Tatbikat sonunda kırmızı takım, drone uçuşunun tesisin çatı ekipmanlarını ve giriş düzenini görüntülemek için yapıldığını raporladı. Savunma ekibinin elinde olayı doğrulayacak hiçbir veri yoktu.",
+      "steps": [
+        "Tatbikat kapsamında drone uçuşunun yetkiyle planlandığını doğrula",
+        "Savunma tarafının tespit, kayıt ve bildirim zincirini incele",
+        "Remote ID gibi pasif tespit kaynaklarının varlığını kontrol et",
+        "Eksikleri olay müdahale prosedürüne bağla"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ01 (keşif) savunması: Hava keşfi gözle fark edildi ama tespit pasif bir veri kaynağına (Remote ID alıcısı) dayanmıyordu ve kayıt prosedürü yoktu. Bu yüzden olay doğrulanamadı ve operatöre ulaşılamadı. Sorun tespit eksikliği değil, tespitin kanıta dönüşmemesi.",
+      "lesson": "Kritik tesislerde yasal pasif drone tespiti (Remote ID dinleme) ve standart olay kaydı (saat, yön, süre, görüntü) kullanılmalı; karıştırma gibi aktif önlemler sivil kurumlara genelde yasaktır, bu yüzden yetkili makamlara bildirim prosedürü tanımlanmalı.",
+      "source": "https://sky.trade/articles/remote-id-2026",
+      "source_id": ""
     }
   ]
 }

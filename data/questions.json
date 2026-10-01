@@ -1,4 +1,617 @@
 {
   "schema_version": 1,
-  "questions": []
+  "questions": [
+    {
+      "id": "Q-0001",
+      "area": "FZ01",
+      "prompt": "Yetkili bir keşif aşamasında ekip tesise hiç yaklaşmadan uydu görüntüsü, çalışan paylaşımları ve iş ilanlarını inceliyor. Bu çalışma en doğru hangi kategoriye girer?",
+      "context": "",
+      "options": [
+        "Pasif keşif: hedefle doğrudan temas yok",
+        "Aktif keşif: hedef sistemle etkileşim var",
+        "Sosyal mühendislik: kişiyle doğrudan temas",
+        "Fiziksel sızma: tesis sınırının aşılması"
+      ],
+      "answer": 0,
+      "explain": "Açık kaynaktan, hedefe dokunmadan yapılan toplama pasif keşiftir; iz bırakmaz ama yine de kapsam belgesinde tanımlı olmalıdır.",
+      "source_id": "",
+      "source": "https://osintframework.com/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0002",
+      "area": "FZ01",
+      "prompt": "Bir iş ilanında belirli bir erişim kontrol yazılımının yönetim deneyiminin aranması bir değerlendirici için ne anlama gelir?",
+      "context": "",
+      "options": [
+        "Kullanılan erişim kontrol platformu hakkında ipucu verir",
+        "Binadaki kamera sayısı hakkında kesin bilgi verir",
+        "Kart okuyucuların frekansını doğrudan kanıtlar",
+        "Güvenlik görevlilerinin vardiya saatini gösterir"
+      ],
+      "answer": 0,
+      "explain": "İlanlar teknoloji yığınını sızdırır; bu bir ipucudur, kanıt değildir ve sahada doğrulanması gerekir. Savunma: ilanlarda ürün adlarını genelleştirmek.",
+      "source_id": "",
+      "source": "https://www.blackhillsinfosec.com/rfid-proximity-cloning-attacks/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0003",
+      "area": "FZ01",
+      "prompt": "Bir tesisin savunma ekibi, yakına gelen drone'ları tespit etmek için Remote ID yayınlarını dinliyor. Remote ID ne sağlar?",
+      "context": "",
+      "options": [
+        "Uyumlu drone'un kimliği ile konum bilgisini yayınlar",
+        "Drone'un kamera görüntüsünü yere aktarmayı engeller",
+        "Drone'un kumanda sinyalini otomatik olarak keser",
+        "Drone'un yalnızca gece uçuşunu kayda alır"
+      ],
+      "answer": 0,
+      "explain": "Remote ID, uyumlu drone'un kimlik ve konum bilgisini Wi-Fi/Bluetooth üzerinden yayınlamasıdır; pasif dinleme ile tespit edilir. Karıştırma (jamming) çoğu ülkede sivillere yasaktır.",
+      "source_id": "",
+      "source": "https://sky.trade/articles/remote-id-2026",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0004",
+      "area": "FZ02",
+      "prompt": "Mantrap (çift kapılı geçiş bölmesi) en çok hangi riski azaltmak için tasarlanır?",
+      "context": "",
+      "options": [
+        "Kartla geçen kişinin arkasından ikinci kişinin girmesi",
+        "Kart okuyucunun kablosunun dışarıdan sökülmesi",
+        "Kamera kayıtlarının yetkisiz kişilerce izlenmesi",
+        "Kilit silindirinin mekanik olarak açılması"
+      ],
+      "answer": 0,
+      "explain": "Mantrap aynı anda tek kapının açık olmasını ve bölmede tek kişi bulunmasını sağlayarak tailgating/piggybacking'i zorlaştırır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Mantrap_(access_control)",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0005",
+      "area": "FZ02",
+      "prompt": "CPTED'deki 'doğal gözetim' ilkesine en uygun önlem hangisidir?",
+      "context": "",
+      "options": [
+        "Girişi görüş hattında tutan alçak bitki ve iyi aydınlatma",
+        "Girişe kart okuyucu ile ikinci bir turnike eklemek",
+        "Kapı kontağına zaman gecikmeli alarm bağlamak",
+        "Güvenlik odasına ek monitör ve kayıt cihazı koymak"
+      ],
+      "answer": 0,
+      "explain": "Doğal gözetim; tasarımla insanların alanı doğal olarak görebilmesidir (peyzaj, aydınlatma, pencere). Turnike erişim kontrolü, monitör ise elektronik gözetimdir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Crime_prevention_through_environmental_design",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0006",
+      "area": "FZ02",
+      "prompt": "Yetkili bir değerlendirmede yükleme rampasının kepenk kapısı kilitli ama yanındaki yaya kapısı kolla açılıyor. Bu bulgu öncelikle hangi alana yazılır?",
+      "context": "",
+      "options": [
+        "Çevre & bariyerler: zincirin en zayıf halkası",
+        "Kilit & mekanik bypass: silindir zafiyeti",
+        "Alarm & algılayıcılar: sensör körlüğü",
+        "İnsan katmanı: personelin ikna edilmesi"
+      ],
+      "answer": 0,
+      "explain": "Sorun bir kilidin açılması değil, çevre katmanında korumasız bırakılmış bir geçiş noktasıdır. FZ04 kilidin kendisini, FZ02 bariyer bütünlüğünü inceler.",
+      "source_id": "",
+      "source": "https://trustedsec.com/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0007",
+      "area": "FZ03",
+      "prompt": "125 kHz HID Prox kartının kopyalanabilmesinin temel nedeni nedir?",
+      "context": "",
+      "options": [
+        "Kart her okumada aynı sabit kimliği şifresiz gönderir",
+        "Kart Crypto1 anahtarıyla zayıf biçimde şifrelenir",
+        "Kart okuyucuya bağlanan Wiegand hattı uzun kalır",
+        "Kart her okumada değişen ama tahmin edilen kod üretir"
+      ],
+      "answer": 0,
+      "explain": "Prox kartlarda kimlik doğrulama yoktur; sabit bir numara yayınlanır. Crypto1 MIFARE Classic'e (13,56 MHz) aittir; bu ikisi sık karıştırılır.",
+      "source_id": "",
+      "source": "https://www.blackhillsinfosec.com/rfid-proximity-cloning-attacks/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0008",
+      "area": "FZ03",
+      "prompt": "Wiegand ile OSDP Secure Channel arasındaki en önemli güvenlik farkı hangisidir?",
+      "context": "",
+      "options": [
+        "OSDP SC okuyucu-kontrolcü hattını şifreler, Wiegand şifrelemez",
+        "Wiegand çift yönlüdür, OSDP yalnızca tek yönlü veri gönderir",
+        "OSDP yalnızca 125 kHz kartlarla, Wiegand 13,56 MHz ile çalışır",
+        "Wiegand kartı, OSDP ise yalnızca kontrolcüyü doğrulamaya yarar"
+      ],
+      "answer": 0,
+      "explain": "Wiegand tek yönlü, şifresiz bir kablo protokolüdür; hattı dinleyen biri kart verisini görür. OSDP çift yönlüdür, Secure Channel ile şifreleme ve bütünlük sağlar ve okuyucu denetimini (tamper) destekler.",
+      "source_id": "",
+      "source": "https://www.securityindustry.org/industry-standards/open-supervised-device-protocol/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0009",
+      "area": "FZ03",
+      "prompt": "MIFARE Classic kartların bilinen zayıflığı hangi bileşenden kaynaklanır?",
+      "context": "",
+      "options": [
+        "Tescilli Crypto1 şifresinin kırılmış olması",
+        "Kartın hiçbir şifreleme kullanmadan UID yollaması",
+        "Kartın 125 kHz bandında uzun menzilli okunması",
+        "Kartın AES anahtarının kart yüzüne basılı olması"
+      ],
+      "answer": 0,
+      "explain": "MIFARE Classic, 2008'de kırılan tescilli Crypto1 şifresini kullanır; anahtar kurtarma saldırıları bu yüzden mümkündür. Savunma: DESFire EV2/EV3 veya Seos gibi modern kimliklere geçiş.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/MIFARE",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0010",
+      "area": "FZ03",
+      "prompt": "Okuyucu yalnızca kartın UID'sini kontrol ediyor, sektör verisini doğrulamıyorsa risk nedir?",
+      "context": "",
+      "options": [
+        "UID'si değiştirilebilen bir kartla kimlik taklit edilebilir",
+        "Kartın içindeki şifreli sektörler kendiliğinden silinir",
+        "Okuyucu her kartı reddeder ve kapı kilitli kalır",
+        "Kontrolcü OSDP yerine otomatik olarak Wiegand'a geçer"
+      ],
+      "answer": 0,
+      "explain": "UID bir kimlik doğrulama değil, bir etikettir; bazı özel kartlar UID yazılmasına izin verir. Doğru tasarım kriptografik karşılıklı doğrulama yapar.",
+      "source_id": "",
+      "source": "https://github.com/RfidResearchGroup/proxmark3",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0011",
+      "area": "FZ04",
+      "prompt": "Pin-tumbler kilitlerde 'bump key' tekniği hangi fiziksel ilkeye dayanır?",
+      "context": "",
+      "options": [
+        "Darbe enerjisinin pinleri anlık olarak kesme hattından ayırması",
+        "Gerilim anahtarıyla pinlerin tek tek kesme hattına oturtulması",
+        "Kilidin yayını ısı ile zayıflatıp silindiri döndürmesi",
+        "Kapı ile kasa arasındaki boşluktan dili geri itmesi"
+      ],
+      "answer": 0,
+      "explain": "Bump key enerjiyi alt pinlerden üst pinlere aktarır (Newton beşiği gibi); kısa bir an kesme hattı açılır. Tek tek pin oturtma 'picking', dili itmek ise 'bypass'tır. Savunma: bump'a dayanıklı silindir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Bump_key",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0012",
+      "area": "FZ04",
+      "prompt": "Değerlendirmede kapı, silindiri hiç açılmadan 'latch slipping' ile açıldı. Bu hangi kategoriye en iyi uyar?",
+      "context": "",
+      "options": [
+        "Bypass: kilit mekanizması atlanıp dil itildi",
+        "Picking: pinler tek tek kesme hattına oturtuldu",
+        "Impressioning: anahtar izlerden yeniden üretildi",
+        "Decoding: anahtar kesimleri dışarıdan okundu"
+      ],
+      "answer": 0,
+      "explain": "Bypass, kilidin pinlerini çözmeden mekanizmanın çevresinden dolaşır. Savunma: kilit dili koruyucu (latch guard) ve deadlatch'li kilitler.",
+      "source_id": "",
+      "source": "https://toool.us/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0013",
+      "area": "FZ04",
+      "prompt": "Master-key sistemlerinin genel bir riski hangisidir?",
+      "context": "",
+      "options": [
+        "Ek kesme hatları, kilidi açan anahtar sayısını artırır",
+        "Tek bir anahtar kaybı yalnızca tek kapıyı etkiler",
+        "Silindirler bump tekniğine karşı tamamen bağışık olur",
+        "Tüm kapılar kartlı okuyucuya geçmek zorunda kalır"
+      ],
+      "answer": 0,
+      "explain": "Master pinler her silindirde ek kesme noktası yaratır; bu tolerans ve anahtar türetme riski doğurur. Kaybolan master anahtar tüm sistemi etkiler.",
+      "source_id": "",
+      "source": "https://toool.us/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0014",
+      "area": "FZ05",
+      "prompt": "Kapı kontağı (manyetik reed) ile PIR sensör arasındaki temel fark nedir?",
+      "context": "",
+      "options": [
+        "Reed kapının açılmasını, PIR ısı hareketini algılar",
+        "Reed ısı değişimini, PIR manyetik alanı algılar",
+        "Reed yalnızca camın kırılmasını, PIR titreşimi algılar",
+        "Reed ve PIR aynı ilkeyle, farklı menzilde çalışır"
+      ],
+      "answer": 0,
+      "explain": "Reed kontak mıknatıs ayrılınca durum değiştirir; PIR ortam ile insan arasındaki kızılötesi (ısı) farkının hareketini görür. Katmanlı tasarım ikisini birlikte kullanır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Passive_infrared_sensor",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0015",
+      "area": "FZ05",
+      "prompt": "Request-to-Exit (REX) sensörü yanlış yerleştirildiğinde ne olur?",
+      "context": "",
+      "options": [
+        "Dışarıdan tetiklenerek kilidi açabilir veya alarmı bastırır",
+        "Kart okuyucunun kimlik doğrulamasını şifreli hale getirir",
+        "Kapının yangın anında kilitli kalmasına neden olur",
+        "Kamera kaydını keserek kör nokta oluşturur"
+      ],
+      "answer": 0,
+      "explain": "REX, içeriden çıkışta alarmı bastırmak veya kilidi açmak için hareket algılar. Kapı aralığından tetiklenebilecek açıdaysa zayıflık olur. Savunma: doğru konum, maskeli lens, mekanik çıkış.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Request_to_exit",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0016",
+      "area": "FZ05",
+      "prompt": "Alarm sisteminde 'hat süpervizyonu' (EOL direnci) neyi tespit etmek için kullanılır?",
+      "context": "",
+      "options": [
+        "Sensör hattının kesilmesi veya kısa devre edilmesi",
+        "Kameranın görüş alanının ışıkla körleştirilmesi",
+        "Kartın okuyucuya fazla yakın tutulması",
+        "Kapı kilidinin pinlerinin zamanla aşınması"
+      ],
+      "answer": 0,
+      "explain": "Hat sonu direnci, panelin normal/alarm/kesik/kısa devre durumlarını ayırt etmesini sağlar; böylece kabloya müdahale fark edilir. Kamera körleştirme FZ06 konusudur.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Burglar_alarm",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0017",
+      "area": "FZ06",
+      "prompt": "Kızılötesi (IR) geceleme kameralarına güçlü IR ışık tutulmasının etkisi nedir?",
+      "context": "",
+      "options": [
+        "Sensör doyar, görüntü parlak lekeyle kör kalır",
+        "Kamera otomatik olarak termal görüntüye geçer",
+        "Kayıt cihazı alarm üretmeden kaydı siler",
+        "Kamera ağ bağlantısını keserek yeniden başlar"
+      ],
+      "answer": 0,
+      "explain": "IR'ye duyarlı sensörler, göze görünmeyen güçlü ışıkla doyabilir. Savunma: görüntü kaybı/doyum analitiği, çakışan kapsama ve farklı açıdan ikinci kamera.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Closed-circuit_television",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0018",
+      "area": "FZ06",
+      "prompt": "Gözetim sisteminde 'kayıt saklama süresi' bir değerlendirme bulgusu olarak neden önemlidir?",
+      "context": "",
+      "options": [
+        "Olay geç fark edilirse kanıt silinmiş olabilir",
+        "Kısa süre, kameraların çözünürlüğünü düşürür",
+        "Uzun süre, kart okuyucuların hızını yavaşlatır",
+        "Süre, kameraların IR menzilini belirler"
+      ],
+      "answer": 0,
+      "explain": "Fiziksel olaylar çoğu zaman günler sonra fark edilir; saklama süresi soruşturma kapasitesini belirler. KVKK'ya uygun ve amaçla orantılı olmalıdır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Closed-circuit_television",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0019",
+      "area": "FZ06",
+      "prompt": "Bir IP kameranın varsayılan parolayla ağa açık olması hangi alanın ve hangi riskin konusudur?",
+      "context": "",
+      "options": [
+        "Gözetim: görüntünün izlenmesi veya kaydın kapatılması",
+        "Kilit: silindirin uzaktan mekanik olarak açılması",
+        "Alarm: reed kontağın manyetik olarak kandırılması",
+        "İnsan katmanı: resepsiyonun telefonla ikna edilmesi"
+      ],
+      "answer": 0,
+      "explain": "IP kameralar ağ cihazıdır; zayıf kimlik bilgileri görüntü sızıntısı ve kayıt manipülasyonu riskidir. Savunma: ayrı VLAN, güçlü parola, yama.",
+      "source_id": "",
+      "source": "https://securithings.com/blog/when-locked-doors-lie-the-disturbing-truth-about-access-control-systems-cves/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0020",
+      "area": "FZ07",
+      "prompt": "Sabit kodlu kumanda ile rolling-code kumanda arasındaki fark nedir?",
+      "context": "",
+      "options": [
+        "Rolling code her basışta yeni kod üretir, sabit kod hep aynıdır",
+        "Sabit kod şifrelidir, rolling code şifresiz olarak gönderilir",
+        "Rolling code yalnızca 125 kHz, sabit kod yalnızca 433 MHz kullanır",
+        "Sabit kod çift yönlüdür, rolling code ise tek yönlü çalışır"
+      ],
+      "answer": 0,
+      "explain": "Sabit kod kaydedilip tekrar oynatılabilir (replay). Rolling code sayaçla değişir; basit tekrar işe yaramaz, ancak bazı tasarım zaafları akademik olarak araştırılmıştır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Rolling_code",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0021",
+      "area": "FZ07",
+      "prompt": "RTL-SDR ile HackRF One arasındaki temel yetenek farkı nedir?",
+      "context": "",
+      "options": [
+        "RTL-SDR yalnızca alır, HackRF alıp yayın da yapabilir",
+        "RTL-SDR yayın yapar, HackRF yalnızca dinleme yapar",
+        "İkisi de yalnızca 125 kHz RFID kartlarını okur",
+        "HackRF yalnızca Wi-Fi, RTL-SDR yalnızca Bluetooth dinler"
+      ],
+      "answer": 0,
+      "explain": "RTL-SDR ucuz, yalnızca alıcıdır (keşif/analiz). HackRF One yarı çift yönlü verici-alıcıdır; yayın yapmak lisans ve yetki gerektirir.",
+      "source_id": "",
+      "source": "https://greatscottgadgets.com/hackrf/one/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0022",
+      "area": "FZ07",
+      "prompt": "Kendi kumandanızın sinyalini RTL-SDR ile incelerken gördüğünüz OOK modülasyonu nedir?",
+      "context": "",
+      "options": [
+        "Taşıyıcının açılıp kapanmasıyla bit kodlamak",
+        "Frekansı iki değer arasında kaydırarak kodlamak",
+        "Fazı 180 derece çevirerek bit kodlamak",
+        "Veriyi gönderimden önce AES ile şifrelemek"
+      ],
+      "answer": 0,
+      "explain": "On-Off Keying, ASK'nin en basit hâlidir: sinyal var=1, yok=0. FSK frekans, PSK faz kaydırır; modülasyon şifreleme değildir.",
+      "source_id": "",
+      "source": "https://www.rtl-sdr.com/about-rtl-sdr/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0023",
+      "area": "FZ08",
+      "prompt": "Bir cihaz kartında UART pinlerini bulmak değerlendirici için neden önemlidir?",
+      "context": "",
+      "options": [
+        "Seri konsol, açılış loglarına ve bazen kabuğa erişim verir",
+        "UART, cihazın RFID kartlarını uzaktan kopyalamasını sağlar",
+        "UART, kameranın IR ışığını otomatik olarak kapatır",
+        "UART yalnızca cihazın güç tüketimini ölçmeye yarar"
+      ],
+      "answer": 0,
+      "explain": "Hata ayıklama konsolu üretimde kapatılmamışsa ciddi bilgi sızıntısı olur. Savunma: üretimde konsolu kapatmak, kimlik doğrulama, kasa tamper koruması.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0024",
+      "area": "FZ08",
+      "prompt": "UART ile JTAG arasındaki fark en iyi hangisiyle anlatılır?",
+      "context": "",
+      "options": [
+        "UART metin konsoludur, JTAG çipe düşük seviye hata ayıklama erişimidir",
+        "UART bellek okur, JTAG yalnızca seri metin akışı sağlar",
+        "İkisi aynı protokolün yalnızca farklı pin dizilimleridir",
+        "JTAG kablosuz çalışır, UART yalnızca kablolu çalışır"
+      ],
+      "answer": 0,
+      "explain": "UART bir seri iletişim kanalıdır; JTAG ise işlemciyi durdurma, bellek okuma/yazma gibi düşük seviye erişim verir. JTAG genelde daha güçlü ve daha tehlikelidir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/JTAG",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0025",
+      "area": "FZ08",
+      "prompt": "Toplantı odasındaki ağ prizine bırakılan bir 'drop box' cihazını savunma tarafı en iyi nasıl yakalar?",
+      "context": "",
+      "options": [
+        "802.1X/NAC ve yeni MAC adresi için uyarı ile",
+        "Kapıya ikinci bir mekanik kilit takarak",
+        "Kamera kayıt saklama süresini uzatarak",
+        "Kart okuyucuyu 125 kHz banda geçirerek"
+      ],
+      "answer": 0,
+      "explain": "Bilinmeyen cihazın ağa katılması ağ katmanında tespit edilir: port güvenliği, 802.1X, kullanılmayan prizlerin kapatılması.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/IEEE_802.1X",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0026",
+      "area": "FZ09",
+      "prompt": "Tailgating ile piggybacking arasındaki ayrım genelde nasıl yapılır?",
+      "context": "",
+      "options": [
+        "Piggybacking'de içerideki kişi bilerek kapıyı tutar",
+        "Tailgating'de ziyaretçi kendi kartını okuyucuya okutur",
+        "Piggybacking yalnızca araç giriş kapılarında geçerlidir",
+        "Tailgating'de kapı kilidi mekanik olarak açılır"
+      ],
+      "answer": 0,
+      "explain": "Tailgating'de yetkili kişi fark etmeden takip edilir; piggybacking'de yetkili kişi farkında olarak (nezaket/ikna) içeri alır. İkisinde de savunma kültür + mantrap/turnike.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Tailgating",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0027",
+      "area": "FZ09",
+      "prompt": "Sosyal mühendislikte 'pretexting' neyi ifade eder?",
+      "context": "",
+      "options": [
+        "İnandırıcı bir senaryo ve rol kurarak güven kazanmak",
+        "Kilitli kapıyı bypass aleti kullanarak açmak",
+        "Ziyaretçi kartının RFID verisini kopyalamak",
+        "Kamera kayıtlarını uzaktan erişimle silmek"
+      ],
+      "answer": 0,
+      "explain": "Pretext, kişinin bilgi ya da erişim vermesini sağlayan kurgu kimlik/senaryodur. Savunma: doğrulama prosedürü (geri arama, eskort).",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0028",
+      "area": "FZ09",
+      "prompt": "Resepsiyonun 'teknik servis' diyen birini doğrulamasının en etkili yolu hangisidir?",
+      "context": "",
+      "options": [
+        "Bilinen numaradan firmayı ve iş emrini geri aramak",
+        "Kişinin üzerindeki üniforma ve logoyu kontrol etmek",
+        "Kişinin elindeki iş emri kâğıdını dikkatle okumak",
+        "Kişiye firmadaki yöneticisinin adını sormak"
+      ],
+      "answer": 0,
+      "explain": "Üniforma, kâğıt ve isim taklit edilebilir; bağımsız kanaldan (rehberdeki bilinen numara) doğrulama sahteciliği kırar.",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0029",
+      "area": "FZ10",
+      "prompt": "2019 Iowa adliyesi olayında yetkili pentest ekibinin tutuklanmasına yol açan temel sorun neydi?",
+      "context": "",
+      "options": [
+        "Yetkiyi veren kurumun binadaki yetki zincirinin belirsiz olması",
+        "Ekibin hiçbir yazılı sözleşmesinin bulunmaması",
+        "Ekibin kart kopyalama cihazını sahada kaybetmesi",
+        "Ekibin işi bitirip raporu geç teslim etmesi"
+      ],
+      "answer": 0,
+      "explain": "Coalfire ekibinin yazılı yetkisi vardı ama bina üzerindeki yetki (eyalet ile ilçe arası) netleşmemişti. Ders: yetki veren kişinin o mülk üzerinde gerçekten yetkili olduğunu doğrula.",
+      "source_id": "",
+      "source": "https://darknetdiaries.com/episode/59/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0030",
+      "area": "FZ10",
+      "prompt": "Fiziksel değerlendirmede 'yetki mektubu' hangisini mutlaka İÇERMELİDİR?",
+      "context": "",
+      "options": [
+        "Kapsam, tarih, yetkili kişi ve 7/24 doğrulama numarası",
+        "Yalnızca ekip üyelerinin isimleri ve fotoğrafları",
+        "Kullanılacak tüm araçların seri numaraları listesi",
+        "Tesisin tüm kamera ve alarm sistemi şifreleri"
+      ],
+      "answer": 0,
+      "explain": "Mektup, yakalanma anında güvenlik/polisin bağımsız doğrulama yapmasını sağlamalı: kapsam, adresler, zaman aralığı, imzalayan ve ulaşılabilir irtibat.",
+      "source_id": "",
+      "source": "https://trustedsec.com/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0031",
+      "area": "FZ10",
+      "prompt": "Değerlendirmede çekilen fotoğraflar çalışanların yüzünü içeriyorsa raporlamada doğru yaklaşım nedir?",
+      "context": "",
+      "options": [
+        "Bulguyu göstermeye yetecek kadar tutup kişileri maskelemek",
+        "Tüm fotoğrafları ham hâliyle müşteriye teslim etmek",
+        "Fotoğrafları ekibin kişisel bulutunda saklamak",
+        "Kanıt sayılmadığı için bulguyu rapordan çıkarmak"
+      ],
+      "answer": 0,
+      "explain": "Veri minimizasyonu: kanıt amacına yetecek kadar veri, kişisel veriler maskeli, güvenli saklama ve sözleşmedeki imha süresi.",
+      "source_id": "",
+      "source": "https://trustedsec.com/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0032",
+      "area": "TOOLS",
+      "prompt": "Proxmark3, Flipper Zero ve HackRF One arasında RFID/NFC derin analizi için en uygun araç hangisidir?",
+      "context": "",
+      "options": [
+        "Proxmark3: LF/HF RFID için özel donanım ve istemci",
+        "Flipper Zero: Sub-GHz yayınına odaklı tam bir SDR",
+        "HackRF One: 125 kHz kart okumak için optimize edildi",
+        "RTL-SDR: 13,56 MHz kartlara veri yazabilen alıcı"
+      ],
+      "answer": 0,
+      "explain": "Proxmark3 RFID için uzmanlaşmıştır; Flipper çok amaçlı ama sınırlı, HackRF geniş bant SDR'dir ve kart iletişimi için uygun değildir.",
+      "source_id": "",
+      "source": "https://github.com/RfidResearchGroup/proxmark3/releases",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0033",
+      "area": "TOOLS",
+      "prompt": "ESPKey benzeri Wiegand implantlarına karşı savunma tarafındaki en iyi karşılık nedir?",
+      "context": "",
+      "options": [
+        "OSDP Secure Channel ve okuyucu tamper denetimi",
+        "Kapıya daha güçlü bir mekanik kilit takmak",
+        "Kameraların çözünürlüğünü artırmak",
+        "Kart okuyucuyu 125 kHz bantta bırakmak"
+      ],
+      "answer": 0,
+      "explain": "Bu implantlar Wiegand hattına araya girip kart verisini kaydeder; şifreli ve denetlenen OSDP SC hattı bu ara-girişi işe yaramaz hâle getirir.",
+      "source_id": "",
+      "source": "https://www.securityindustry.org/industry-standards/open-supervised-device-protocol/",
+      "added": "2026-10-01",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0034",
+      "area": "TOOLS",
+      "prompt": "DroneShield'ın Ağustos 2026'da duyurduğu RfRecon cihazı hangi tür araçtır?",
+      "context": "",
+      "options": [
+        "Pasif RF istihbarat ve drone tespit (Remote ID dahil) cihazı",
+        "Drone'ların kumandasını ele geçiren aktif saldırı cihazı",
+        "125 kHz kartları uzaktan kopyalayan uzun menzilli okuyucu",
+        "Kameraları IR ışıkla körleştiren taşınabilir karıştırıcı"
+      ],
+      "answer": 0,
+      "explain": "RfRecon, geniş bant spektrum izleme, yön bulma ve Remote ID tespiti yapan taşınabilir bir savunma (counter-UAS) aracıdır; pasif dinleme yapar.",
+      "source_id": "",
+      "source": "https://uasweekly.com/2026/08/11/droneshield-unveils-rfrecon-to-advance-counter-uas-rf-intelligence-and-drone-detection/",
+      "added": "2026-10-01",
+      "author": "daily"
+    }
+  ]
 }

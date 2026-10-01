@@ -685,6 +685,30 @@
         "savunma"
       ],
       "icon": "🏷️"
+    },
+    {
+      "id": "TOOL-035",
+      "name": "DroneShield RfRecon",
+      "type": "defense",
+      "vendor": "DroneShield",
+      "level": "advanced",
+      "areas": [
+        "FZ01",
+        "FZ07"
+      ],
+      "what": "Ağustos 2026'da duyurulan taşınabilir RF istihbarat ve drone tespit cihazı. Geniş bant spektrum izleme, yön bulma, yapay zekâ destekli sinyal tanıma ve Remote ID (Wi-Fi/Bluetooth) tespitini tek cihazda birleştirir. Pasif çalışır; sinyal yaymaz.",
+      "how_to_use": "Savunma tarafı aracıdır: kritik tesis çevresinde drone ve şüpheli RF etkinliğini tespit edip kaydetmek için kullanılır. Kurumsal/devlet sınıfı bir üründür; öğrenme için aynı fikri kendi RTL-SDR'ınla ve Remote ID alıcı uygulamalarıyla kendi drone'un üzerinde deneyebilirsin. Mahremiyet ve izin: Başkalarının iletişim içeriğini dinlemek/çözmek yasal değildir; yalnızca yetkili olduğun tesiste ve mevzuata uygun izleme yap. Karıştırma (jamming) sivillere yasaktır.",
+      "install": "Ticari ürün; satıcı üzerinden kurumsal temin. Öğrenme alternatifi: RTL-SDR + açık kaynak Remote ID alıcı uygulamaları.",
+      "source": "https://uasweekly.com/2026/08/11/droneshield-unveils-rfrecon-to-advance-counter-uas-rf-intelligence-and-drone-detection/",
+      "tags": [
+        "counter-uas",
+        "drone",
+        "remote-id",
+        "rf",
+        "tespit",
+        "2026"
+      ],
+      "icon": "🛸"
     }
   ]
 }
