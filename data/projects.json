@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "id": "PRJ-001",
+      "title": "NFC kart okuma kiti (PN532 + Arduino)",
+      "category": "FZ03",
+      "difficulty": "baslangic",
+      "time": "1-2 saat",
+      "materials": [
+        "Arduino Uno/Nano",
+        "PN532 NFC modulu",
+        "jumper kablolar",
+        "kendi NFC kartin"
+      ],
+      "steps": [
+        "PN532'yi I2C modunda Arduino'ya bagla",
+        "Adafruit PN532 kutuphanesini kur",
+        "ornek 'readMifare' eskizini yukle",
+        "kendi kartini okut, UID'yi seri ekranda gor",
+        "farkli kartlarin UID/teknolojisini karsilastir"
+      ],
+      "concept": "Erisim kontrol kartlarinin nasil 'kimlik' yaydigini (UID, sektor) somut olarak anlarsin. FZ03'un temel kavrami.",
+      "safety": "Sadece KENDI kartlarinla calis. Baskasinin kartini izinsiz okuma.",
+      "source": "https://learn.adafruit.com/adafruit-pn532-rfid-nfc"
+    },
+    {
+      "id": "PRJ-002",
+      "title": "125 kHz kartını oku ve teknolojisini tanı (Proxmark/RDM6300)",
+      "category": "FZ03",
+      "difficulty": "orta",
+      "time": "2-3 saat",
+      "materials": [
+        "Proxmark3 veya RDM6300 LF modulu",
+        "bilgisayar",
+        "kendi eski prox kartin"
+      ],
+      "steps": [
+        "cihazi kur (Proxmark client)",
+        "'lf search' ile kart tipini tani",
+        "kartin sadece ID yayinladigini gozlemle",
+        "eski (125 kHz) ve yeni (13.56 MHz) kart farkini not et"
+      ],
+      "concept": "Neden eski prox kartlarin zayif oldugunu (kimlik dogrulama yok) deneyerek gorursun; yukseltme onerisini gerekcelendirirsin.",
+      "safety": "Yalnizca sahibi oldugun kartlar. Klonlama pratigini bos/kendi kartina yap.",
+      "source": "https://github.com/RfidResearchGroup/proxmark3/wiki"
+    },
+    {
+      "id": "PRJ-003",
+      "title": "Şeffaf kilit ile single-pin picking",
+      "category": "FZ04",
+      "difficulty": "baslangic",
+      "time": "1 saat+ (pratik)",
+      "materials": [
+        "seffaf egitim kilidi",
+        "gerginlik anahtari",
+        "pik (hook)"
+      ],
+      "steps": [
+        "seffaf kilitte pimleri gozle",
+        "hafif gerginlik uygula",
+        "pimleri tek tek shear line'a getir",
+        "acildiginda hangi pimde takildigini gozlemle",
+        "gozun kapali tekrar dene"
+      ],
+      "concept": "Pimli kilidin mekanigini ve neden pick'lenebildigini elinle anlarsin. Locksport disiplininin baslangici.",
+      "safety": "YASAL: sadece kendi/egitim kilitlerinde. Baskasinin kilidine asla dokunma.",
+      "source": "https://www.artoflockpicking.com/"
+    },
+    {
+      "id": "PRJ-004",
+      "title": "Challenge lock ilerleme seti (locksport)",
+      "category": "FZ04",
+      "difficulty": "orta",
+      "time": "haftalara yayili",
+      "materials": [
+        "artan zorlukta birkac kilit",
+        "pik seti",
+        "pratik gunlugu"
+      ],
+      "steps": [
+        "kolay bir asma kilitle basla",
+        "guvenlik pimli (spool/serrated) kilide gec",
+        "her kilit icin sureni kaydet",
+        "pick-dirençli kilitlerle farki gozlemle"
+      ],
+      "concept": "Kilit guvenlik siniflarini (standart vs yuksek guvenlik) somut kiyaslarsin; savunma onerini (dogru kilit) gerekcelendirirsin.",
+      "safety": "Sadece kendi kilitlerin. Topluluk etigine uy (toool/defcon kurallari).",
+      "source": "https://toool.us/"
+    },
+    {
+      "id": "PRJ-005",
+      "title": "RTL-SDR ile RF spektrum gözlemi",
+      "category": "FZ07",
+      "difficulty": "baslangic",
+      "time": "1-2 saat",
+      "materials": [
+        "RTL-SDR dongle",
+        "anten",
+        "SDR# veya GQRX yazilimi"
+      ],
+      "steps": [
+        "RTL-SDR surucusunu kur",
+        "SDR# ile FM radyoyu bul (kurulum testi)",
+        "kendi kapi/garaj kumandanin bandini (or. 433 MHz) izle",
+        "kumandaya basinca sinyali spektrumda gor"
+      ],
+      "concept": "RF sinyallerinin gercek oldugunu ve gozlemlenebildigini anlarsin. FZ07'nin giris kapisi.",
+      "safety": "Sadece DINLE (RTL-SDR verici degildir). Kendi cihazlarinin sinyalini incele.",
+      "source": "https://www.rtl-sdr.com/about-rtl-sdr/"
+    },
+    {
+      "id": "PRJ-006",
+      "title": "433 MHz kendi sensörünü yakala ve çöz",
+      "category": "FZ07",
+      "difficulty": "orta",
+      "time": "2-4 saat",
+      "materials": [
+        "RTL-SDR",
+        "ucuz 433 MHz kapi sensoru/kumanda",
+        "rtl_433 yazilimi"
+      ],
+      "steps": [
+        "rtl_433 kur",
+        "kendi sensorunu tetikle",
+        "yakalanan mesaji (cihaz, durum) oku",
+        "sabit mesaj mi yoksa degisen mi gozlemle"
+      ],
+      "concept": "Ucuz kablosuz sensorlerin cogunun kimlik dogrulamasiz, tekrar oynatilabilir mesaj yolladigini kesfedersin.",
+      "safety": "Kendi cihazlarin. Baskasinin sistemini izlemek/etkilemek yasak.",
+      "source": "https://github.com/merbanan/rtl_433"
+    },
+    {
+      "id": "PRJ-007",
+      "title": "ESP8266 ile Wi-Fi dayanıklılık demosu (kendi ağın)",
+      "category": "FZ07",
+      "difficulty": "orta",
+      "time": "2-3 saat",
+      "materials": [
+        "ESP8266/ESP32 kart",
+        "USB kablo",
+        "Arduino IDE"
+      ],
+      "steps": [
+        "kartin surucusunu/IDE'yi kur",
+        "KENDI test aginda bir farkindalik eskizi yukle",
+        "kendi test cihazinin baglantisini gozlemle",
+        "WPA3/yonetim cercevesi korumasinin etkisini not et"
+      ],
+      "concept": "Kablosuz aglarin yonetim cercevesi saldirilarina karsi neden korunmasi gerektigini (WPA3/PMF) anlarsin.",
+      "safety": "SADECE kendi aginda ve kendi cihazlarinla. Baskasinin agina mudahale sucu.",
+      "source": "https://www.espressif.com/"
+    },
+    {
+      "id": "PRJ-008",
+      "title": "Arduino PIR + basit alarm mantığı",
+      "category": "FZ05",
+      "difficulty": "baslangic",
+      "time": "1-2 saat",
+      "materials": [
+        "Arduino",
+        "PIR hareket sensoru",
+        "buzzer/LED",
+        "kablolar"
+      ],
+      "steps": [
+        "PIR'i Arduino'ya bagla",
+        "hareket algilayinca LED/buzzer yak",
+        "sensorun algilama konisini ve gecikmesini olc",
+        "yavas/dik yaklasimda algilamanin zayifladigini gozlemle"
+      ],
+      "concept": "Hareket algilamanin nasil calistigini ve kor noktalarin neden olustugunu deneyerek anlarsin (FZ05).",
+      "safety": "Kendi projen. Savunma mantigini anlamak icin; kimseyi gizlice izleme.",
+      "source": "https://docs.arduino.cc/learn/"
+    },
+    {
+      "id": "PRJ-009",
+      "title": "Raspberry Pi 'dropbox' lab (kendi ağında)",
+      "category": "FZ08",
+      "difficulty": "ileri",
+      "time": "3-5 saat",
+      "materials": [
+        "Raspberry Pi",
+        "SD kart",
+        "kendi ev agin"
+      ],
+      "steps": [
+        "Pi OS kur, SSH ac",
+        "kendi aginda Pi'yi uzaktan erisimli yap",
+        "ag segmentasyonu (VLAN/misafir ag) dene",
+        "NAC/802.1X kavramini kendi ortaminda arastir"
+      ],
+      "concept": "Bir 'drop cihazinin' neden tehlikeli oldugunu ve NAC/segmentasyonun bunu nasil durdurdugunu kendi aginda gorursun.",
+      "safety": "SADECE kendi evinin aginda. Baskasinin agina cihaz takmak sucttur.",
+      "source": "https://www.raspberrypi.com/"
+    },
+    {
+      "id": "PRJ-010",
+      "title": "USB HID zararsız demo (Pico/Digispark)",
+      "category": "FZ08",
+      "difficulty": "orta",
+      "time": "1-2 saat",
+      "materials": [
+        "Raspberry Pi Pico veya Digispark",
+        "USB",
+        "Arduino/CircuitPython"
+      ],
+      "steps": [
+        "karti HID klavye olarak programla",
+        "ZARARSIZ payload yaz (not defteri acip 'merhaba' yazsin)",
+        "kendi makinende takip calismasini gozlemle",
+        "oturum kilidinin bunu nasil engelledigini test et"
+      ],
+      "concept": "Isletim sisteminin klavyeye nasil kosulsuz guvendigini ve oturum kilidinin neden kritik oldugunu anlarsin.",
+      "safety": "SADECE kendi makinende ve zararsiz payload ile. Baskasinin cihazinda asla.",
+      "source": "https://www.raspberrypi.com/documentation/microcontrollers/"
+    },
+    {
+      "id": "PRJ-011",
+      "title": "Kendi evinin CPTED değerlendirmesi (kağıt-kalem)",
+      "category": "FZ02",
+      "difficulty": "baslangic",
+      "time": "1 saat",
+      "materials": [
+        "kagit/telefon",
+        "CPTED kontrol listesi"
+      ],
+      "steps": [
+        "aydinlatma kor noktalarini isaretle",
+        "gorus hatlarini (bitki, duvar) not et",
+        "giris noktalarini ve zayifliklari listele",
+        "dusuk maliyetli iyilestirme oner"
+      ],
+      "concept": "Fiziksel savunmayi 'saldirgan gozuyle' degerlendirmeyi, arac olmadan ogrenirsin. Rapor yazma pratigi.",
+      "safety": "Kendi evin/izinli alan. Baskasinin mulkunu gozlemek icin degil.",
+      "source": "https://www.cpted.net/"
+    },
+    {
+      "id": "PRJ-012",
+      "title": "Yetki mektubu + RoE şablonu hazırla",
+      "category": "FZ10",
+      "difficulty": "baslangic",
+      "time": "1 saat",
+      "materials": [
+        "kelime islemci",
+        "ornek sablonlar"
+      ],
+      "steps": [
+        "yetki mektubu taslagi yaz (kapsam, tarih, imza, iletisim)",
+        "Rules of Engagement listesi cikar (izinli/yasak, saat, durdurma)",
+        "acil durum/panik prosedürü ekle",
+        "bir mentor/arkadasla gozden gecir"
+      ],
+      "concept": "Fiziksel testin en kritik (ve en cok atlanan) parcasini: YAZILI YETKI ve kapsam disiplinini ogrenirsin. Portfolyo degeri yuksek.",
+      "safety": "Bu sablon olmadan gercek test YAPILMAZ. Her zaman yazili yetki.",
+      "source": "https://trustedsec.com/blog"
+    }
+  ]
+}

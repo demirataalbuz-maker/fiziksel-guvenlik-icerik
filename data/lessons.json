@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "lessons": [
+    {
+      "id": "LSN-001",
+      "title": "Gömülü C — GPIO ve pin mantığı",
+      "lang": "C (gömülü)",
+      "category": "FZ08",
+      "level": "baslangic",
+      "intro": "Fiziksel guvenlik cihazlarinin cogu (kart okuyucu, panel, sensor) bir mikrodenetleyicide gomulu C ile calisir. Temel: bir pini okumak/yazmak. Bunu anlarsan donanimin 'dilini' anlarsin.",
+      "code": "// Bir butona basilinca LED yak (sozde-register ornegi)\n#define LED_PIN  13\n#define BTN_PIN   2\n\nvoid setup() {\n    pinMode(LED_PIN, OUTPUT);\n    pinMode(BTN_PIN, INPUT_PULLUP);\n}\n\nvoid loop() {\n    int basili = (digitalRead(BTN_PIN) == LOW);\n    digitalWrite(LED_PIN, basili ? HIGH : LOW);\n}",
+      "explain": "pinMode: pini giris/cikis yapar. INPUT_PULLUP: ic direncle pini HIGH tutar, butona basilinca LOW olur. loop() surekli doner. Gomulu dunyada her sey bu 'oku-karar-ver-yaz' dongusudur.",
+      "source": "https://docs.arduino.cc/learn/"
+    },
+    {
+      "id": "LSN-002",
+      "title": "Arduino — PN532 ile NFC UID okuma",
+      "lang": "Arduino (C++)",
+      "category": "FZ03",
+      "level": "baslangic",
+      "intro": "Erisim kontrolunu anlamak icin bir kartin UID'sini okumak en iyi baslangic. Arduino + PN532 ile birkac satirda kartin kimligini goruruz.",
+      "code": "#include <Adafruit_PN532.h>\nAdafruit_PN532 nfc(SDA, SCL);\n\nvoid setup(){ Serial.begin(115200); nfc.begin(); nfc.SAMConfig(); }\n\nvoid loop(){\n  uint8_t uid[7]; uint8_t len;\n  if (nfc.readPassiveTargetID(PN532_MIFARE_ISO14443A, uid, &len)) {\n    Serial.print(\"UID: \");\n    for (uint8_t i=0;i<len;i++){ Serial.print(uid[i],HEX); Serial.print(' '); }\n    Serial.println();\n  }\n}",
+      "explain": "readPassiveTargetID kart yaklasinca UID'yi uid[] dizisine doldurur. UID kartin 'kimlik numarasi'dir. Eski sistemler sadece buna bakar - iste zayiflik tam burada.",
+      "source": "https://learn.adafruit.com/adafruit-pn532-rfid-nfc"
+    },
+    {
+      "id": "LSN-003",
+      "title": "MicroPython — Pico ile sensör okuma",
+      "lang": "MicroPython",
+      "category": "FZ05",
+      "level": "baslangic",
+      "intro": "MicroPython, mikrodenetleyicide Python yazmani saglar - gomulu dunyaya en hizli giris. Bir hareket sensorunu birkac satirla okuyalim.",
+      "code": "from machine import Pin\nimport time\n\npir = Pin(15, Pin.IN)\nled = Pin(25, Pin.OUT)\n\nwhile True:\n    if pir.value():\n        led.on()\n        print('hareket!')\n    else:\n        led.off()\n    time.sleep_ms(100)",
+      "explain": "Pin(15, Pin.IN): 15 numarali pini giris yapar. pir.value() 1 ise hareket var. Python bildigin icin gomulu kod yazmak aninda tanidik gelir.",
+      "source": "https://docs.micropython.org/"
+    },
+    {
+      "id": "LSN-004",
+      "title": "DuckyScript — HID payload dili (kavram)",
+      "lang": "DuckyScript",
+      "category": "FZ08",
+      "level": "orta",
+      "intro": "HID enjeksiyon cihazlari basit bir betik diliyle 'klavye gibi' tus gonderir. Mantigini anlamak, kilitsiz oturum riskini ve savunmasini kavramak icindir. Ornek TAMAMEN ZARARSIZDIR (not defteri acip mesaj yazar).",
+      "code": "REM Zararsiz farkindalik demosu - sadece kendi makinende\nDELAY 1000\nGUI r\nDELAY 300\nSTRING notepad\nENTER\nDELAY 600\nSTRING Bu makine kilitsiz birakildi - oturumunu kilitle!\n",
+      "explain": "REM: yorum. GUI r: Win+R calistir kutusu. STRING: yazi yazar. DELAY: bekler. Butun 'guc' klavye taklidinden gelir. SAVUNMA: oturum kilidi + USB HID allowlist bu betigi etkisiz birakir.",
+      "source": "https://docs.hak5.org/hak5-usb-rubber-ducky"
+    },
+    {
+      "id": "LSN-005",
+      "title": "Bash — drop cihazı otomasyonu",
+      "lang": "Bash",
+      "category": "FZ08",
+      "level": "orta",
+      "intro": "Linux tabanli drop cihazlari (Pi, Shark Jack) kabuk betikleriyle otomatiklesir. Temel bir 'acilista calis' betigini anlamak, cihazin nasil is yaptigini gosterir.",
+      "code": "#!/usr/bin/env bash\n# KENDI test aginda envanter - zararsiz ornek\nOUT=\"/tmp/rapor_$(date +%F_%H%M).txt\"\necho \"== Arayuzler ==\" > \"$OUT\"\nip -brief addr >> \"$OUT\"\necho \"== Ayni agdaki cihazlar ==\" >> \"$OUT\"\nip neigh >> \"$OUT\"\necho \"Rapor: $OUT\"",
+      "explain": "date ile zaman damgali dosya adi. ip addr/neigh ag bilgisini toplar, >> ile dosyaya ekler. Gercek drop cihazlari ayni mantikla, acilista otomatik calisir. Sadece KENDI aginda dene.",
+      "source": "https://docs.hak5.org/"
+    },
+    {
+      "id": "LSN-006",
+      "title": "Python + pyserial — cihazla UART konuşma",
+      "lang": "Python",
+      "category": "FZ08",
+      "level": "orta",
+      "intro": "Donanim arayuzu (UART) kesfinde cihazin seri konsoluyla konusursun. Python+pyserial bunun en pratik yolu.",
+      "code": "import serial\n\n# COM portu ve baud donanima gore degisir (or. 115200)\nser = serial.Serial('COM3', 115200, timeout=1)\nser.write(b'\\r\\n')          # enter gonder\ndata = ser.read(200)          # yaniti oku\nprint(data.decode(errors='ignore'))\nser.close()",
+      "explain": "Serial('COM3', 115200): porta baglan. write ile komut, read ile yanit. UART genelde etiketsiz 4 pindir (VCC/GND/TX/RX). Dogru baud'u bulmak kesfin ilk adimidir. Sadece kendi/eski cihazinda.",
+      "source": "https://pyserial.readthedocs.io/"
+    },
+    {
+      "id": "LSN-007",
+      "title": "Python — RTL-SDR ile sinyal yakalama (kavram)",
+      "lang": "Python (SDR)",
+      "category": "FZ07",
+      "level": "ileri",
+      "intro": "RF ogrenmede SDR verisini kodla islemek guclu bir adim. pyrtlsdr ile ham ornekleri (IQ) okuyup gozlemleyebilirsin.",
+      "code": "from rtlsdr import RtlSdr\n\nsdr = RtlSdr()\nsdr.sample_rate = 2.048e6\nsdr.center_freq = 433.92e6   # kendi kumandanin bandi\nsdr.gain = 'auto'\n\nsamples = sdr.read_samples(256*1024)   # ham IQ ornekleri\nprint('ornek sayisi:', len(samples))\nsdr.close()",
+      "explain": "sample_rate: saniyedeki ornek. center_freq: dinlenen frekans. read_samples karmasik (IQ) sayilar dondurur - sinyalin ham hali. Buradan FFT ile spektrum cizilir. ALICI only: yalnizca dinlersin.",
+      "source": "https://pyrtlsdr.readthedocs.io/"
+    },
+    {
+      "id": "LSN-008",
+      "title": "Proxmark client — RFID komut dili",
+      "lang": "Proxmark script",
+      "category": "FZ03",
+      "level": "ileri",
+      "intro": "Proxmark kendi komut diliyle calisir; kartlari taniman, okuman ve analiz etmen bu komutlarla olur. Erisim kontrol degerlendirmesinin ana araci.",
+      "code": "# Proxmark3 client komutlari (kendi kartinda)\nhw version          # cihaz bilgisi\nlf search           # dusuk frekans kart ara/tani\nhf search           # yuksek frekans (13.56 MHz) ara\nhf mf info          # MIFARE kart bilgisi\nlf em 410x reader   # EM410x kart ID oku",
+      "explain": "Her komut bir islem: 'search' kart tipini tanir, 'reader'/'info' ayrinti verir. Once teknolojiyi tani (search), sonra o aileye ozel komutlari kullan. Yalnizca sahip oldugun kartlar.",
+      "source": "https://github.com/RfidResearchGroup/proxmark3/wiki"
+    },
+    {
+      "id": "LSN-009",
+      "title": "Flipper Zero — .sub ve uygulama mantığı",
+      "lang": "Flipper (FZ)",
+      "category": "FZ07",
+      "level": "orta",
+      "intro": "Flipper Zero, yakalanan RF sinyallerini .sub dosyalarinda saklar ve FAP uygulamalariyla genisler. Dosya formatini anlamak sinyali anlamaktir.",
+      "code": "# Ornek .sub dosya basligi (kendi kumandan)\nFiletype: Flipper SubGhz RAW File\nVersion: 1\nFrequency: 433920000\nPreset: FuriHalSubGhzPresetOok650Async\nProtocol: RAW\nRAW_Data: 320 -320 640 -640 ...",
+      "explain": "Frequency: sinyalin bandi. Preset: modulasyon (OOK = on-off keying). RAW_Data: sinyalin zamanlama dizisi (mikrosaniye). Sabit kodlu bir kumanda her zaman AYNI RAW_Data'yi uretir - tekrar riski buradan gelir.",
+      "source": "https://docs.flipper.net/"
+    }
+  ]
+}

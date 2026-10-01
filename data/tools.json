@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "id": "TOOL-001",
+      "name": "Lock Pick Seti",
+      "type": "offense",
+      "vendor": "Çeşitli (SouthOrd/Sparrows)",
+      "level": "core",
+      "areas": [
+        "FZ04"
+      ],
+      "what": "Pimli silindir kilitleri YASAL olarak (locksport, kendi kilidin) acmayi ogrenmek icin gerginlik anahtari + pik seti. Fiziksel degerlendirmenin ve kilit dayanikliligini anlamanin temeli.",
+      "how_to_use": "Seffaf kilit veya kendi asma kilidinle single-pin picking ve raking calis. Yalnizca sahibi oldugun/izinli kilitlerde.",
+      "install": "",
+      "source": "https://www.artoflockpicking.com/",
+      "tags": [
+        "locksport",
+        "mekanik"
+      ]
+    },
+    {
+      "id": "TOOL-002",
+      "name": "Bump Key Seti",
+      "type": "offense",
+      "vendor": "Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ04"
+      ],
+      "what": "Pimleri ani darbeyle hizalayarak uygun kilitleri acan ozel kesilmis anahtarlar. Kilidin bump'a dayanikliligini test etmek icin.",
+      "how_to_use": "Kendi kilidinde bump teknigini dene; bump-dirençli kilitlerle farki gozlemle.",
+      "install": "",
+      "source": "https://toool.us/",
+      "tags": [
+        "locksport",
+        "mekanik"
+      ]
+    },
+    {
+      "id": "TOOL-003",
+      "name": "Bypass Araçları (traveler hook / under-door / shove)",
+      "type": "offense",
+      "vendor": "Sparrows/SEREPICK",
+      "level": "advanced",
+      "areas": [
+        "FZ02",
+        "FZ04"
+      ],
+      "what": "Kilidi hic acmadan kapi donanimindaki (ic kol, REX, mandal) zayifligi kullanan aparatlar. Cogu gercek giris bu yolla olur.",
+      "how_to_use": "Kendi/izinli kapilarinda kapi bosluklarini ve ic donanim erisimini degerlendir; savunma onerisi uret.",
+      "install": "",
+      "source": "https://trustedsec.com/blog",
+      "tags": [
+        "bypass",
+        "mekanik"
+      ]
+    },
+    {
+      "id": "TOOL-004",
+      "name": "Proxmark3 (RDV4)",
+      "type": "both",
+      "vendor": "RFID Research Group",
+      "level": "advanced",
+      "areas": [
+        "FZ03"
+      ],
+      "what": "RFID/NFC arastirma ve erisim kontrol degerlendirmesinin standart cihazi. LF (125 kHz) ve HF (13.56 MHz) kartlari okur/analiz eder; kart ailesini ve zayifligini tespit eder.",
+      "how_to_use": "Kendi/test kartlarinla kart teknolojisini tani, zayif kartlari raporla, savunma (modern kart) oner.",
+      "install": "github.com/RfidResearchGroup/proxmark3",
+      "source": "https://github.com/RfidResearchGroup/proxmark3/wiki",
+      "tags": [
+        "rfid",
+        "nfc",
+        "erisim"
+      ]
+    },
+    {
+      "id": "TOOL-005",
+      "name": "Flipper Zero",
+      "type": "both",
+      "vendor": "Flipper Devices",
+      "level": "core",
+      "areas": [
+        "FZ03",
+        "FZ07",
+        "FZ08"
+      ],
+      "what": "Cok amacli tasinabilir arac: sub-GHz RF, 125 kHz RFID, NFC, kizilotesi, GPIO ve HID. Ogrenme ve farkindalik demolari icin cok yonlu.",
+      "how_to_use": "Kendi kumandan/kartin/cihazinla protokolleri incele; kapsam ici degerlendirmede hizli triyaj araci olarak kullan.",
+      "install": "flipperzero.one",
+      "source": "https://docs.flipper.net/",
+      "tags": [
+        "multi",
+        "rf",
+        "rfid",
+        "hid"
+      ]
+    },
+    {
+      "id": "TOOL-006",
+      "name": "YARD Stick One",
+      "type": "offense",
+      "vendor": "Great Scott Gadgets",
+      "level": "advanced",
+      "areas": [
+        "FZ07"
+      ],
+      "what": "Alt-GHz (300-900 MHz) kablosuz sinyalleri yakalama/gonderme icin USB radyo. Kumanda/sensor protokollerini incelemek icin.",
+      "how_to_use": "Kendi RF cihazlarinin sinyallerini rfcat ile incele; sabit vs rolling kod farkini gozlemle.",
+      "install": "",
+      "source": "https://greatscottgadgets.com/yardstickone/",
+      "tags": [
+        "rf",
+        "subghz"
+      ]
+    },
+    {
+      "id": "TOOL-007",
+      "name": "HackRF One",
+      "type": "both",
+      "vendor": "Great Scott Gadgets",
+      "level": "advanced",
+      "areas": [
+        "FZ07"
+      ],
+      "what": "1 MHz-6 GHz genis bantli Yazilim Tanimli Radyo (SDR). Genis RF yelpazesini gozlemleme ve (yetkili) iletim icin.",
+      "how_to_use": "GNU Radio/SDR araclariyla kendi cihazlarinin spektrumunu incele; sinyal analizi ogren.",
+      "install": "greatscottgadgets.com/hackrf",
+      "source": "https://greatscottgadgets.com/hackrf/",
+      "tags": [
+        "sdr",
+        "rf"
+      ]
+    },
+    {
+      "id": "TOOL-008",
+      "name": "RTL-SDR Dongle",
+      "type": "both",
+      "vendor": "RTL-SDR.com / Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ07",
+        "FZ01"
+      ],
+      "what": "Ucuz (~20$) alici-only SDR. RF spektrumunu dinlemek, sensor/kumanda sinyallerini gozlemlemek icin baslangic araci.",
+      "how_to_use": "Kendi kumandanin frekansini bul, sinyali kaydet, protokolu incele. RF ogrenmenin en ucuz giris kapisi.",
+      "install": "rtl-sdr.com/qsg",
+      "source": "https://www.rtl-sdr.com/about-rtl-sdr/",
+      "tags": [
+        "sdr",
+        "rf",
+        "baslangic"
+      ]
+    },
+    {
+      "id": "TOOL-009",
+      "name": "ESPKey",
+      "type": "offense",
+      "vendor": "Red Team Tools",
+      "level": "advanced",
+      "areas": [
+        "FZ03"
+      ],
+      "what": "Wiegand kart okuyucu ile panel arasina takilan kucuk implant; gecen kart kimliklerini kaydeder (yetkili test).",
+      "how_to_use": "Kendi test okuyucunda Wiegand'in neden sifrelenmesi (OSDP) gerektigini goster.",
+      "install": "",
+      "source": "https://github.com/octosavvi/ESPKey",
+      "tags": [
+        "wiegand",
+        "erisim",
+        "implant"
+      ]
+    },
+    {
+      "id": "TOOL-010",
+      "name": "USB Rubber Ducky",
+      "type": "offense",
+      "vendor": "Hak5",
+      "level": "advanced",
+      "areas": [
+        "FZ08"
+      ],
+      "what": "Klavye gibi gorunup onceden yazilmis tuslari saniyeler icinde gonderen HID enjeksiyon cihazi. Kilitsiz oturum riskini gostermek icin.",
+      "how_to_use": "Kendi makinende ZARARSIZ bir payload (not defteri acip mesaj yazmak) ile HID guveninin tehlikesini demo et.",
+      "install": "shop.hak5.org",
+      "source": "https://docs.hak5.org/hak5-usb-rubber-ducky",
+      "tags": [
+        "hid",
+        "payload"
+      ]
+    },
+    {
+      "id": "TOOL-011",
+      "name": "Bash Bunny",
+      "type": "offense",
+      "vendor": "Hak5",
+      "level": "advanced",
+      "areas": [
+        "FZ08"
+      ],
+      "what": "USB uzerinden coklu saldiri (HID, depolama, ag adaptoru) yapabilen gelismis cihaz. Yetkili degerlendirmede cok yonlu.",
+      "how_to_use": "Kendi laboratuvarinda farkli USB saldiri senaryolarini (zararsiz) dene.",
+      "install": "",
+      "source": "https://docs.hak5.org/bash-bunny",
+      "tags": [
+        "hid",
+        "usb",
+        "payload"
+      ]
+    },
+    {
+      "id": "TOOL-012",
+      "name": "Shark Jack / Packet Squirrel / LAN Turtle",
+      "type": "offense",
+      "vendor": "Hak5",
+      "level": "advanced",
+      "areas": [
+        "FZ08"
+      ],
+      "what": "Ic aga takilip hizli tarama veya disari tunel acan kucuk ag cihazlari ('drop box'). Bos port + fiziksel erisim riskini gosterir.",
+      "how_to_use": "Yetkili testte bos porta tak, NAC'in cihazi engelleyip engellemedigini degerlendir; raporla.",
+      "install": "",
+      "source": "https://docs.hak5.org/",
+      "tags": [
+        "ag",
+        "drop",
+        "implant"
+      ]
+    },
+    {
+      "id": "TOOL-013",
+      "name": "O.MG Cable",
+      "type": "offense",
+      "vendor": "MG / Hak5",
+      "level": "advanced",
+      "areas": [
+        "FZ08"
+      ],
+      "what": "Normal sarj/veri kablosu gibi gorunen ama icinde HID enjeksiyon + kablosuz kontrol barindiran implant kablo.",
+      "how_to_use": "Kendi makinende zararsiz demo ile 'guvenilir kablo' varsayiminin riskini goster.",
+      "install": "",
+      "source": "https://o.mg.lol/",
+      "tags": [
+        "hid",
+        "implant",
+        "kablo"
+      ]
+    },
+    {
+      "id": "TOOL-014",
+      "name": "Raspberry Pi (drop platformu)",
+      "type": "both",
+      "vendor": "Raspberry Pi Foundation",
+      "level": "core",
+      "areas": [
+        "FZ08"
+      ],
+      "what": "Ucuz tek kart bilgisayar; yetkili testlerde tasinabilir 'dropbox' veya evde ogrenme laboratuvari olarak kullanilir.",
+      "how_to_use": "Kendi aginda bir Pi'yi uzaktan erisimli test cihazina cevir; ag segmentasyonu/NAC'i kendi ortaminda ogren.",
+      "install": "raspberrypi.com",
+      "source": "https://www.raspberrypi.com/",
+      "tags": [
+        "platform",
+        "linux",
+        "ogrenme"
+      ]
+    },
+    {
+      "id": "TOOL-015",
+      "name": "Termal Kamera (FLIR/benzeri)",
+      "type": "offense",
+      "vendor": "FLIR / Çeşitli",
+      "level": "advanced",
+      "areas": [
+        "FZ01"
+      ],
+      "what": "Isi izlerini goruntuler; tus takiminda son basilan tuslar veya yeni kullanilan yuzeyler hakkinda ipucu verir.",
+      "how_to_use": "Kendi keypad'inde isi sizintisini gozlemle; isi dagitan tasarim onerisi uret.",
+      "install": "",
+      "source": "https://www.flir.com/",
+      "tags": [
+        "kesif",
+        "termal"
+      ]
+    },
+    {
+      "id": "TOOL-016",
+      "name": "Multimetre + Logic Analyzer + Bus Pirate",
+      "type": "both",
+      "vendor": "Çeşitli / Dangerous Prototypes",
+      "level": "advanced",
+      "areas": [
+        "FZ08"
+      ],
+      "what": "Donanim arayuzlerini (UART/SPI/I2C/JTAG) kesfetmek, pinleri olcmek ve haberlesmeyi incelemek icin temel donanim hack seti.",
+      "how_to_use": "Kendi/eski bir IoT cihazinda debug pinlerini bul, UART konsolunu oku, firmware/gunluk analiz et.",
+      "install": "",
+      "source": "https://dangerousprototypes.com/docs/Bus_Pirate",
+      "tags": [
+        "donanim",
+        "uart",
+        "jtag"
+      ]
+    },
+    {
+      "id": "TOOL-017",
+      "name": "ESP8266 / ESP32 Geliştirme Kartı",
+      "type": "offense",
+      "vendor": "Espressif",
+      "level": "core",
+      "areas": [
+        "FZ07"
+      ],
+      "what": "Ucuz Wi-Fi/Bluetooth mikrodenetleyici. Kendi aginda kablosuz farkindalik demolari (deauth, sahte AP) ve sensor projeleri icin.",
+      "how_to_use": "Kendi test aginda Wi-Fi dayanikliligini olc; sensor okuma projeleri yap.",
+      "install": "arduino.cc / platformio",
+      "source": "https://www.espressif.com/",
+      "tags": [
+        "wifi",
+        "mikrodenetleyici",
+        "diy"
+      ]
+    },
+    {
+      "id": "TOOL-018",
+      "name": "PN532 NFC Modülü",
+      "type": "both",
+      "vendor": "NXP / Adafruit",
+      "level": "core",
+      "areas": [
+        "FZ03"
+      ],
+      "what": "Arduino/Pi ile NFC/13.56 MHz kart okumayi ogrenmek icin ucuz modul. Erisim kontrol temellerini anlamanin en kolay yolu.",
+      "how_to_use": "Kendi NFC kartini oku, UID/sektor kavramlarini ogren; proje olarak kur.",
+      "install": "learn.adafruit.com/adafruit-pn532-rfid-nfc",
+      "source": "https://learn.adafruit.com/adafruit-pn532-rfid-nfc",
+      "tags": [
+        "nfc",
+        "rfid",
+        "diy",
+        "baslangic"
+      ]
+    },
+    {
+      "id": "TOOL-019",
+      "name": "RFID Engelleyici Kılıf / Faraday Kesesi",
+      "type": "defense",
+      "vendor": "Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ03",
+        "FZ09"
+      ],
+      "what": "Kartin/telefonun izinsiz okunmasini engelleyen ekranlama. Yakin mesafe kart okuma saldirisina karsi basit, etkili onlem.",
+      "how_to_use": "Calisanlara dagitimi oner; kart okuma demosu ile oncesi/sonrasini goster.",
+      "install": "",
+      "source": "https://www.nist.gov/",
+      "tags": [
+        "savunma",
+        "rfid"
+      ]
+    },
+    {
+      "id": "TOOL-020",
+      "name": "CPTED İlkeleri",
+      "type": "framework",
+      "vendor": "CPTED",
+      "level": "core",
+      "areas": [
+        "FZ02",
+        "FZ01"
+      ],
+      "what": "Cevresel Tasarim Yoluyla Suc Onleme: aydinlatma, gorus hatti, dogal gozetim, erisim kontrolu ilkeleri. Fiziksel savunmanin tasarim cercevesi.",
+      "how_to_use": "Bina cevresini CPTED kontrol listesiyle puanla; dusuk maliyetli iyilestirme oner.",
+      "install": "",
+      "source": "https://www.cpted.net/",
+      "tags": [
+        "savunma",
+        "cerceve",
+        "tasarim"
+      ]
+    },
+    {
+      "id": "TOOL-021",
+      "name": "OSDP (Secure Channel)",
+      "type": "defense",
+      "vendor": "SIA",
+      "level": "core",
+      "areas": [
+        "FZ03"
+      ],
+      "what": "Wiegand'in yerini alan, sifreli ve cift yonlu kart okuyucu protokolu. Hat dinleme/tekrar saldirilarina karsi modern savunma.",
+      "how_to_use": "Musterinin okuyucu-panel haberlesmesini OSDP'ye tasimasini oner.",
+      "install": "",
+      "source": "https://www.securityindustry.org/industry-standards/open-supervised-device-protocol/",
+      "tags": [
+        "savunma",
+        "erisim",
+        "protokol"
+      ]
+    },
+    {
+      "id": "TOOL-022",
+      "name": "TrustedSec — Physical Pentest Kaynakları",
+      "type": "framework",
+      "vendor": "TrustedSec",
+      "level": "core",
+      "areas": [
+        "FZ10",
+        "FZ02"
+      ],
+      "what": "Fiziksel kirmizi takim metodolojisi, yetki/kapsam sablonlari ve saha deneyim yazilari. Angajman disiplininin referansi.",
+      "how_to_use": "Her angajman oncesi yetki mektubu + RoE sablonlarini buradan uyarla.",
+      "install": "",
+      "source": "https://trustedsec.com/blog",
+      "tags": [
+        "cerceve",
+        "metodoloji",
+        "yetki"
+      ]
+    },
+    {
+      "id": "TOOL-023",
+      "name": "DEF CON Physical Security / Lockpick Village",
+      "type": "framework",
+      "vendor": "DEF CON",
+      "level": "core",
+      "areas": [
+        "FZ04"
+      ],
+      "what": "Fiziksel guvenlik ve locksport konularinda topluluk sunumlari ve ogrenme kaynaklari (YASAL pratik kulturu).",
+      "how_to_use": "Teknikleri ogrenmek ve topluluk etigini benimsemek icin sunumlari izle.",
+      "install": "",
+      "source": "https://www.defcon.org/",
+      "tags": [
+        "cerceve",
+        "locksport",
+        "topluluk"
+      ]
+    },
+    {
+      "id": "TOOL-024",
+      "name": "OSINT Framework",
+      "type": "framework",
+      "vendor": "OSINT Framework",
+      "level": "core",
+      "areas": [
+        "FZ01"
+      ],
+      "what": "Acik kaynak kesif araclarinin kategorize dizini. Pasif tesis/kisi kesfinin baslangic noktasi.",
+      "how_to_use": "Angajman oncesi pasif kesif icin araclari buradan sec; bulgulari raporla.",
+      "install": "",
+      "source": "https://osintframework.com/",
+      "tags": [
+        "kesif",
+        "osint",
+        "cerceve"
+      ]
+    }
+  ]
+}

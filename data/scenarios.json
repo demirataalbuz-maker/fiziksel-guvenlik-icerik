@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "scenarios": [
+    {
+      "id": "SC-0001",
+      "day": "2026-10-01",
+      "title": "Rozet fotoğrafı ele verdi",
+      "area": "FZ01",
+      "level": "baslangic",
+      "story": "Bir perakende zincirine yetkili değerlendirme yapan ekip, çalışanların sosyal medyada paylaştığı 'ilk gün' fotoğraflarını topladı. Fotoğraflardaki yaka kartları yakından okunabiliyordu; kartın rengi, logosu ve formatı net görünüyordu. Ekip bu görselden kartın teknolojisini ve tasarımını tahmin edip sahaya daha hazırlıklı gitti.",
+      "steps": [
+        "Açık kaynaklardan çalışan fotoğraflarını topla",
+        "Kart tasarımı/teknolojisi ipuçlarını çıkar",
+        "Bulguyu rapora 'dışarıdan görünürlük' riski olarak yaz"
+      ],
+      "question": "Bu vakada asıl zayıflık neydi?",
+      "answer": "Halka açık paylaşımların saldırı yüzeyini büyütmesi (pasif keşif).",
+      "lesson": "Rozet/ekran fotoğrafı paylaşımı politika ile sınırlanmalı; farkındalık eğitimi verilmeli.",
+      "source": "https://osintframework.com/",
+      "source_id": "",
+      "truth": "composite"
+    },
+    {
+      "id": "SC-0002",
+      "day": "2026-10-01",
+      "title": "Açık yükleme rampası",
+      "area": "FZ02",
+      "level": "baslangic",
+      "story": "Bir lojistik tesisinde ana giriş turnikeli ve kameralıyken, arka taraftaki yükleme rampası mesai boyunca açık tutuluyordu. Yetkili ekip, ziyaretçi kaydı olmadan rampadan iç koridora kadar ilerleyebildi ve bunu zaman damgalı fotoğrafla belgeledi. Kimseyle temas kurmadan 'iç bölgeye eriştik' kanıtı toplandı.",
+      "steps": [
+        "Tüm çevre giriş noktalarını envantere al",
+        "En zayıf/refakatsiz noktayı belirle",
+        "Erişimi kanıtla, kapıya önlem öner"
+      ],
+      "question": "Ana giriş güçlüyken ekip nasıl içeri girdi?",
+      "answer": "Sürekli açık ve refakatsiz servis/yükleme kapısından (en zayıf halka).",
+      "lesson": "Tüm giriş noktaları aynı disiplinle korunmalı: otomatik kapanma, refakat, kamera+alarm.",
+      "source": "https://trustedsec.com/blog",
+      "source_id": "",
+      "truth": "composite"
+    },
+    {
+      "id": "SC-0003",
+      "day": "2026-10-01",
+      "title": "Eski prox kart hâlâ geçiyordu",
+      "area": "FZ03",
+      "level": "orta",
+      "story": "Bir ofis binasında erişim kartlarının bir kısmı yıllar önce dağıtılmış eski nesil 125 kHz prox kartlardı. Yetkili değerlendirmede, bu kartların yalnızca sabit bir kimlik yaydığı ve kimlik doğrulaması yapmadığı tespit edildi. Ekip, kendi test kartı üzerinde teknolojinin zayıflığını göstererek modern karta geçiş önerdi.",
+      "steps": [
+        "Sahadaki kart teknolojisini tanı",
+        "Eski/şifresiz kartları işaretle",
+        "Modern (şifreli) karta geçiş gerekçesini raporla"
+      ],
+      "question": "Eski prox kartların temel sorunu neydi?",
+      "answer": "Sadece sabit bir ID yayması, kimlik doğrulamaması (kopyalanabilir).",
+      "lesson": "Şifreli/karşılıklı doğrulamalı kartlara (ör. modern aileler) geçilmeli; kritik kapıda kart+PIN.",
+      "source": "https://github.com/RfidResearchGroup/proxmark3/wiki",
+      "source_id": "",
+      "truth": "composite"
+    },
+    {
+      "id": "SC-0004",
+      "day": "2026-10-01",
+      "title": "Nazik çalışan, açık kapı",
+      "area": "FZ09",
+      "level": "baslangic",
+      "story": "Elinde kahve ve kutularla gelen 'meşgul' görünümlü bir kişiye, içeri giren bir çalışan kibarca kapıyı tuttu. Böylece kart okutmadan, refakatsiz bir giriş gerçekleşti. Yetkili ekip bu tailgating denemesini önceden planlamıştı ve denemenin ne kadar kolay başarıya ulaştığını farkındalık raporuna işledi.",
+      "steps": [
+        "Meşgul/aceleci bir görünüm kur",
+        "Yetkili birinin ardından yaklaş",
+        "Açılan kapıdan refakatsiz geç (yetkili test)"
+      ],
+      "question": "Bu giriş hangi insan davranışına dayanıyordu?",
+      "answer": "Nezaket ve yardımseverlik (kapıyı tutma) — tailgating/piggybacking.",
+      "lesson": "'Bir kart, bir kişi' kültürü, turnike/mantrap ve karşılama görevlisi ile önlenir.",
+      "source": "https://www.social-engineer.org/",
+      "source_id": "",
+      "truth": "composite"
+    },
+    {
+      "id": "SC-0005",
+      "day": "2026-10-01",
+      "title": "Sabit kodlu kumanda tekrarı",
+      "area": "FZ07",
+      "level": "orta",
+      "story": "Bir sitenin bahçe kapısı eski bir uzaktan kumanda ile açılıyordu. Yetkili bir RF değerlendirmesinde, kumandanın her basışta AYNI sabit kodu yaydığı gözlemlendi. Ekip kendi test ortamında bu sinyalin kaydedilip tekrar oynatılabileceğini (replay) gösterdi ve rolling-code kumandaya geçiş önerdi.",
+      "steps": [
+        "Kumandanın bandını/kodunu gözlemle (kendi cihazın)",
+        "Sabit mi rolling mi olduğunu belirle",
+        "Sabit kod ise replay riskini raporla"
+      ],
+      "question": "Sabit kodlu kumandanın zayıflığı nedir?",
+      "answer": "Her seferinde aynı kodu yaydığı için kaydedilip tekrar oynatılabilir (replay).",
+      "lesson": "Rolling-code / kriptografik kumanda ve kimlik doğrulamalı kapı denetleyici kullanılmalı.",
+      "source": "https://www.rtl-sdr.com/about-rtl-sdr/",
+      "source_id": "",
+      "truth": "composite"
+    },
+    {
+      "id": "SC-0006",
+      "day": "2026-10-01",
+      "title": "Toplantı odasındaki boş priz",
+      "area": "FZ08",
+      "level": "ileri",
+      "story": "Yetkili bir iç ağ değerlendirmesinde ekip, misafirlere açık bir toplantı odasındaki boş ethernet prizine avuç içi boyutunda bir cihaz taktı. Cihaz dışarıya güvenli bir tünel açtı ve ekip, binadan ayrıldıktan sonra bile iç ağı uzaktan değerlendirebildi. Bulgu, boş port politikası ve NAC eksikliğini ortaya koydu.",
+      "steps": [
+        "Fiziksel erişimle boş bir porta cihaz tak (yetkili test)",
+        "Cihazın dışarı tünel açmasını gözlemle",
+        "NAC/802.1X'in cihazı engelleyip engellemediğini raporla"
+      ],
+      "question": "Bu 'drop cihazı' neden bu kadar etkili oldu?",
+      "answer": "Fiziksel erişim + boş port + NAC eksikliği ağ sınırını kısa devre yaptı.",
+      "lesson": "802.1X/NAC, boş port kapatma, MAC/port güvenliği ve DLP ile önlenir.",
+      "source": "https://trustedsec.com/blog",
+      "source_id": "",
+      "truth": "composite"
+    },
+    {
+      "id": "SC-0007",
+      "day": "2026-10-01",
+      "title": "Yetki mektubu olmasaydı",
+      "area": "FZ10",
+      "level": "baslangic",
+      "story": "Bir fiziksel değerlendirme sırasında ekip üyelerinden biri, gece saatinde bir güvenlik görevlisi tarafından durduruldu. Üyenin yanında imzalı, tarihli ve kapsamı net bir yetki mektubu ('get out of jail') vardı; görevli, mektuptaki irtibat kişisini arayarak durumu doğruladı ve olay güvenle kapandı. Mektup olmasaydı ciddi bir yasal sorun doğabilirdi.",
+      "steps": [
+        "Angajman öncesi imzalı yetki mektubu hazırla",
+        "Kapsam, tarih ve acil irtibatı net yaz",
+        "Sahada her üye mektubu taşısın"
+      ],
+      "question": "Bu olay yetki mektubunun neden kritik olduğunu nasıl gösterir?",
+      "answer": "Yazılı yetki olmadan fiziksel test yasal olarak çok risklidir; mektup olayı güvenle çözer.",
+      "lesson": "Her angajmanda imzalı yetki + RoE + acil irtibat zorunludur.",
+      "source": "https://trustedsec.com/blog",
+      "source_id": "",
+      "truth": "composite"
+    },
+    {
+      "id": "SC-0008",
+      "day": "2026-10-01",
+      "title": "Mıknatıslı kapı kontağı",
+      "area": "FZ05",
+      "level": "orta",
+      "story": "Alarmlı bir yan kapıda basit bir manyetik (reed) kontak kullanılıyordu. Yetkili test sırasında ekip, kapı açılmadan önce harici bir mıknatısı kontağın yanına yaklaştırınca sistemin kapıyı hâlâ 'kapalı' sandığını gösterdi. Bu, basit manyetik kontakların sınırını ortaya koydu.",
+      "steps": [
+        "Kontak tipini belirle (basit reed mi?)",
+        "Harici mıknatısla 'kapalı' durumunu koru (kendi/test kapısı)",
+        "Dengeli kontak + tamper önerisini raporla"
+      ],
+      "question": "Basit reed kontağın zayıflığı nedir?",
+      "answer": "Sadece mıknatıs varlığını kontrol eder; harici mıknatısla kandırılabilir.",
+      "lesson": "Dengeli (BMS) manyetik kontak, tamper koruması ve konum izleme kullanılmalı.",
+      "source": "https://www.sans.org/",
+      "source_id": "",
+      "truth": "composite"
+    }
+  ]
+}
