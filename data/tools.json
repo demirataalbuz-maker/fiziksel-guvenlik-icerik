@@ -17,7 +17,8 @@
       "tags": [
         "locksport",
         "mekanik"
-      ]
+      ],
+      "icon": "🗝️"
     },
     {
       "id": "TOOL-002",
@@ -35,7 +36,8 @@
       "tags": [
         "locksport",
         "mekanik"
-      ]
+      ],
+      "icon": "🗝️"
     },
     {
       "id": "TOOL-003",
@@ -54,7 +56,8 @@
       "tags": [
         "bypass",
         "mekanik"
-      ]
+      ],
+      "icon": "🪝"
     },
     {
       "id": "TOOL-004",
@@ -73,7 +76,8 @@
         "rfid",
         "nfc",
         "erisim"
-      ]
+      ],
+      "icon": "💳"
     },
     {
       "id": "TOOL-005",
@@ -95,7 +99,8 @@
         "rf",
         "rfid",
         "hid"
-      ]
+      ],
+      "icon": "🧰"
     },
     {
       "id": "TOOL-006",
@@ -113,7 +118,8 @@
       "tags": [
         "rf",
         "subghz"
-      ]
+      ],
+      "icon": "📡"
     },
     {
       "id": "TOOL-007",
@@ -131,7 +137,8 @@
       "tags": [
         "sdr",
         "rf"
-      ]
+      ],
+      "icon": "📡"
     },
     {
       "id": "TOOL-008",
@@ -151,7 +158,8 @@
         "sdr",
         "rf",
         "baslangic"
-      ]
+      ],
+      "icon": "📡"
     },
     {
       "id": "TOOL-009",
@@ -170,7 +178,8 @@
         "wiegand",
         "erisim",
         "implant"
-      ]
+      ],
+      "icon": "💳"
     },
     {
       "id": "TOOL-010",
@@ -188,7 +197,8 @@
       "tags": [
         "hid",
         "payload"
-      ]
+      ],
+      "icon": "⌨️"
     },
     {
       "id": "TOOL-011",
@@ -207,7 +217,8 @@
         "hid",
         "usb",
         "payload"
-      ]
+      ],
+      "icon": "⌨️"
     },
     {
       "id": "TOOL-012",
@@ -226,7 +237,8 @@
         "ag",
         "drop",
         "implant"
-      ]
+      ],
+      "icon": "🧱"
     },
     {
       "id": "TOOL-013",
@@ -245,7 +257,8 @@
         "hid",
         "implant",
         "kablo"
-      ]
+      ],
+      "icon": "⌨️"
     },
     {
       "id": "TOOL-014",
@@ -264,7 +277,8 @@
         "platform",
         "linux",
         "ogrenme"
-      ]
+      ],
+      "icon": "🖥️"
     },
     {
       "id": "TOOL-015",
@@ -282,7 +296,8 @@
       "tags": [
         "kesif",
         "termal"
-      ]
+      ],
+      "icon": "🔭"
     },
     {
       "id": "TOOL-016",
@@ -301,7 +316,8 @@
         "donanim",
         "uart",
         "jtag"
-      ]
+      ],
+      "icon": "🔧"
     },
     {
       "id": "TOOL-017",
@@ -320,7 +336,8 @@
         "wifi",
         "mikrodenetleyici",
         "diy"
-      ]
+      ],
+      "icon": "📶"
     },
     {
       "id": "TOOL-018",
@@ -340,7 +357,8 @@
         "rfid",
         "diy",
         "baslangic"
-      ]
+      ],
+      "icon": "💳"
     },
     {
       "id": "TOOL-019",
@@ -359,7 +377,8 @@
       "tags": [
         "savunma",
         "rfid"
-      ]
+      ],
+      "icon": "🛡️"
     },
     {
       "id": "TOOL-020",
@@ -379,7 +398,8 @@
         "savunma",
         "cerceve",
         "tasarim"
-      ]
+      ],
+      "icon": "📚"
     },
     {
       "id": "TOOL-021",
@@ -398,7 +418,8 @@
         "savunma",
         "erisim",
         "protokol"
-      ]
+      ],
+      "icon": "🛡️"
     },
     {
       "id": "TOOL-022",
@@ -418,7 +439,8 @@
         "cerceve",
         "metodoloji",
         "yetki"
-      ]
+      ],
+      "icon": "📚"
     },
     {
       "id": "TOOL-023",
@@ -437,7 +459,8 @@
         "cerceve",
         "locksport",
         "topluluk"
-      ]
+      ],
+      "icon": "📚"
     },
     {
       "id": "TOOL-024",
@@ -456,7 +479,212 @@
         "kesif",
         "osint",
         "cerceve"
-      ]
+      ],
+      "icon": "📚"
+    },
+    {
+      "id": "TOOL-025",
+      "name": "Keşif Dronu (hava keşfi)",
+      "type": "both",
+      "vendor": "DJI / Çeşitli",
+      "level": "advanced",
+      "areas": [
+        "FZ01",
+        "FZ02"
+      ],
+      "what": "Yukaridan tesis cevresini, cati, avlu, kor nokta ve giris akisini goruntuleyen insansiz hava araci. Yetkili degerlendirmede hizli hava kesfi ve CPTED gozlemi; savunmada drone tespiti gerekliligini gosterir.",
+      "how_to_use": "Yetkili alan uzerinde, YEREL HAVACILIK KURALLARINA uyarak ucur; cevre zayifliklarini ve kor noktalari yukaridan haritala. Gizlilik/izin sart.",
+      "install": "",
+      "source": "https://trustedsec.com/blog",
+      "tags": [
+        "drone",
+        "hava",
+        "kesif"
+      ],
+      "icon": "🛸"
+    },
+    {
+      "id": "TOOL-026",
+      "name": "GPS İzleyici / Varlık Takibi",
+      "type": "both",
+      "vendor": "Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ01"
+      ],
+      "what": "Bir araci/varligin konumunu takip eden kucuk GPS cihazi. Yetkili testte lojistik/rota analizi; karsi tarafta 'aracima izleyici konmus mu' farkindaligi ve tarama.",
+      "how_to_use": "SADECE kendi/izinli varlikta. Konum gizliligine saygi; izinsiz kisi takibi YASAK ve suctur.",
+      "install": "",
+      "source": "https://www.sans.org/",
+      "tags": [
+        "gps",
+        "takip",
+        "kesif"
+      ],
+      "icon": "📍"
+    },
+    {
+      "id": "TOOL-027",
+      "name": "Dürbün / Uzun Menzil Optik",
+      "type": "offense",
+      "vendor": "Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ01"
+      ],
+      "what": "Uzaktan gozlem icin dürbün/spotting scope. Giris-cikis paternleri, rozet tasarimi ve kapi donanimini guvenli mesafeden gozlemlemek icin.",
+      "how_to_use": "Kamuya acik/izinli konumdan gozlem yap; mahremiyete girme, kisiyi hedef alma.",
+      "install": "",
+      "source": "https://trustedsec.com/blog",
+      "tags": [
+        "optik",
+        "kesif",
+        "gozlem"
+      ],
+      "icon": "🔭"
+    },
+    {
+      "id": "TOOL-028",
+      "name": "Endoskop / Muayene Kamerası",
+      "type": "offense",
+      "vendor": "Çeşitli",
+      "level": "advanced",
+      "areas": [
+        "FZ02",
+        "FZ04"
+      ],
+      "what": "Esnek uclu mini kamera. Kapi alti bosluklarini, kilit mekanizmasini veya ulasilmasi zor noktalari gormek icin.",
+      "how_to_use": "Kendi/izinli kapi ve kilitlerinde bosluk/donanim degerlendir. Savunma: kapi alti plakasi onerisi.",
+      "install": "",
+      "source": "https://www.artoflockpicking.com/",
+      "tags": [
+        "kamera",
+        "gorus",
+        "mekanik"
+      ],
+      "icon": "🐍"
+    },
+    {
+      "id": "TOOL-029",
+      "name": "Wi-Fi Pineapple",
+      "type": "offense",
+      "vendor": "Hak5",
+      "level": "advanced",
+      "areas": [
+        "FZ07"
+      ],
+      "what": "Sahte erisim noktasi (rogue AP) kurarak kablosuz istemci davranisini ve aga baglanma guvenligini test eden cihaz.",
+      "how_to_use": "KENDI test aginda/izinli kapsamada sahte AP dayanikliligini olc; savunma: WPA3/802.1X, rogue AP tespiti oner.",
+      "install": "shop.hak5.org",
+      "source": "https://docs.hak5.org/wifi-pineapple",
+      "tags": [
+        "wifi",
+        "rogue-ap",
+        "kablosuz"
+      ],
+      "icon": "📶"
+    },
+    {
+      "id": "TOOL-030",
+      "name": "Donanım Keylogger (farkındalık)",
+      "type": "offense",
+      "vendor": "Çeşitli",
+      "level": "advanced",
+      "areas": [
+        "FZ08"
+      ],
+      "what": "Klavye ile bilgisayar arasina takilan, tus vuruslarini kaydeden kucuk cihaz. Fiziksel erisim riskini ve karsi onlemi gostermek icin.",
+      "how_to_use": "SADECE kendi makinende demo; USB port denetimi ve fiziksel erisim kisitinin onemini goster. Savunma odakli kullan.",
+      "install": "",
+      "source": "https://www.sans.org/",
+      "tags": [
+        "keylogger",
+        "donanim",
+        "farkindalik"
+      ],
+      "icon": "🔑"
+    },
+    {
+      "id": "TOOL-031",
+      "name": "RF / Böcek Dedektörü (karşı-gözetim)",
+      "type": "defense",
+      "vendor": "Çeşitli",
+      "level": "advanced",
+      "areas": [
+        "FZ06",
+        "FZ07"
+      ],
+      "what": "Ortamdaki gizli verici/dinleme cihazi ve anormal RF yayinlarini tespit eden counter-surveillance araci.",
+      "how_to_use": "Hassas toplanti alanlarini tara; gizli verici/kamera var mi degerlendir. TSCM (teknik gozetim karsi onlemi) temeli.",
+      "install": "",
+      "source": "https://www.sans.org/",
+      "tags": [
+        "tscm",
+        "karsi-gozetim",
+        "savunma"
+      ],
+      "icon": "📟"
+    },
+    {
+      "id": "TOOL-032",
+      "name": "Gizli Kamera Dedektörü",
+      "type": "defense",
+      "vendor": "Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ06"
+      ],
+      "what": "Lens yansimasi ve IR ile gizli kameralari bulan cihaz. Mahremiyet ve karsi-gozetim degerlendirmesi icin.",
+      "how_to_use": "Konaklama/toplanti/soyunma alanlarini tara; bulunan kamerayi yetkiliye bildir.",
+      "install": "",
+      "source": "https://www.sans.org/",
+      "tags": [
+        "karsi-gozetim",
+        "kamera",
+        "savunma"
+      ],
+      "icon": "🔎"
+    },
+    {
+      "id": "TOOL-033",
+      "name": "Body Cam / Kanıt Kayıt Cihazı",
+      "type": "both",
+      "vendor": "Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ10"
+      ],
+      "what": "Angajman sirasinda erisimi ve bulgulari zaman damgali kaydeden giyilebilir kamera. Delil zinciri ve rapor icin.",
+      "how_to_use": "Yetki kapsaminda kayit al; mahremiyet ve veri saklama kurallarina uy. Kanitlari guvenli sakla.",
+      "install": "",
+      "source": "https://trustedsec.com/blog",
+      "tags": [
+        "kanit",
+        "belgeleme",
+        "opsec"
+      ],
+      "icon": "🎥"
+    },
+    {
+      "id": "TOOL-034",
+      "name": "Tamper-Evident Mühür / Etiket",
+      "type": "defense",
+      "vendor": "Çeşitli",
+      "level": "core",
+      "areas": [
+        "FZ08",
+        "FZ10"
+      ],
+      "what": "Acildiginda iz birakan guvenlik muhru/etiketi. Cihaz muhafazasi, kapi ve kabinlerin mudahale edilip edilmedigini gosterir.",
+      "how_to_use": "Kritik donanimi muhurle; mudahale izini kontrol et. Fiziksel butunluk savunmasi.",
+      "install": "",
+      "source": "https://www.nist.gov/",
+      "tags": [
+        "tamper",
+        "muhur",
+        "savunma"
+      ],
+      "icon": "🏷️"
     }
   ]
 }
