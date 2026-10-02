@@ -612,6 +612,492 @@
       "source": "https://uasweekly.com/2026/08/11/droneshield-unveils-rfrecon-to-advance-counter-uas-rf-intelligence-and-drone-detection/",
       "added": "2026-10-01",
       "author": "daily"
+    },
+    {
+      "id": "Q-0035",
+      "area": "FZ01",
+      "prompt": "Yetkili keşifte hangisi hedefle hiçbir etkileşime girmeyen pasif OSINT'tir?",
+      "context": "",
+      "options": [
+        "Kapıdaki okuyucuya yaklaşıp sinyal dinlemek",
+        "Resepsiyonu arayıp vardiya saatlerini öğrenmek",
+        "Kurye kılığında lobiye girip çevreyi gözlemek",
+        "Sokak görünümü görüntüleriyle bina girişlerini incelemek"
+      ],
+      "answer": 3,
+      "explain": "Pasif keşifte hedefe hiçbir iz bırakılmaz; kamuya açık görüntü ve kayıtlar kullanılır. Arama, yaklaşma ve lobiye girme aktif keşiftir ve yetki kapsamı gerektirir.",
+      "source_id": "",
+      "source": "https://www.sans.org/blog/passive-reconnaissance/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0036",
+      "area": "FZ01",
+      "prompt": "Çalışanların paylaştığı fotoğraflarda rozet tasarımı net görünüyor. Savunma tarafı için en doğru karşılık hangisi?",
+      "context": "",
+      "options": [
+        "Tüm çalışanların rozetini aynı renge çevirmek",
+        "Rozet paylaşımı politikası ve çalışan farkındalık eğitimi",
+        "Sosyal medya hesaplarını işyerinden engellemek",
+        "Girişteki kamera sayısını yarıya indirmek"
+      ],
+      "answer": 1,
+      "explain": "Rozet görünümü kopya üretimine zemin hazırlar. Kalıcı çözüm paylaşım politikası, farkındalık ve rozetin tek başına yeterli olmaması (ikinci faktör, görsel doğrulama) ilkesidir.",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/framework/information-gathering/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0037",
+      "area": "FZ01",
+      "prompt": "Shodan ile internete açık bir kamera yönetim paneli bulmak hangi keşif türüdür ve neden?",
+      "context": "",
+      "options": [
+        "Fiziksel; tesise yaklaşılmıştır",
+        "Pasif; veri hedefe dokunulmadan önceden taranmıştır",
+        "Sosyal; çalışanla iletişim kurulmuştur",
+        "Aktif; hedefe doğrudan paket gönderilmiştir"
+      ],
+      "answer": 1,
+      "explain": "Shodan başkalarının önceden topladığı tarama verisini sunar; sorgu hedefe trafik üretmez. Panele bağlanmaya çalışmak ise aktif adımdır ve yetki ister.",
+      "source_id": "",
+      "source": "https://www.shodan.io/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0038",
+      "area": "FZ02",
+      "prompt": "Anti-passback özelliği hangi riski azaltmak için kullanılır?",
+      "context": "",
+      "options": [
+        "Kapının kilit dili üzerinden açılması",
+        "Okuyucu kablosunun kesilmesi",
+        "Kartın 125 kHz sinyalinin kopyalanması",
+        "Aynı kartın girişte geri verilip başkasına kullandırılması"
+      ],
+      "answer": 3,
+      "explain": "Anti-passback, bir kartın içeri girdikten sonra çıkış okutulmadan tekrar giriş yapmasını engeller; kartın arkadaşa geri uzatılmasını (pass-back) boşa çıkarır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Anti-passback",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0039",
+      "area": "FZ02",
+      "prompt": "Araçla çarpma saldırısına karşı bariyerlerin dayanımı hangi test standardıyla sınıflanır?",
+      "context": "",
+      "options": [
+        "EN 1303 silindir testi",
+        "IEC 62676 video sınıfı",
+        "ASTM F2656 çarpışma testi",
+        "EN 50131 alarm sınıfı"
+      ],
+      "answer": 2,
+      "explain": "ASTM F2656 araç bariyerlerinin gerçek çarpışma testine dayalı K/M/P derecelerini tanımlar. Diğerleri silindir, alarm ve video sistemleri içindir.",
+      "source_id": "",
+      "source": "https://www.astm.org/f2656_f2656m-20.html",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0040",
+      "area": "FZ02",
+      "prompt": "Çevre güvenliğinde bir bariyerin etkili sayılması için temel koşul hangisidir?",
+      "context": "",
+      "options": [
+        "Bariyerin rengi çevreyle uyumlu olmalı",
+        "Bariyer mümkün olduğunca yüksek olmalı",
+        "Geciktirme süresi, tespit sonrası müdahale süresinden uzun olmalı",
+        "Bariyer kameralardan bağımsız çalışmalı"
+      ],
+      "answer": 2,
+      "explain": "Derinlemesine savunmada tespit, geciktirme ve müdahale birlikte çalışır. Saldırgan geciktirme bitmeden müdahale ulaşamıyorsa bariyer işlevini yitirir.",
+      "source_id": "",
+      "source": "https://www.cisa.gov/topics/physical-security",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0041",
+      "area": "FZ03",
+      "prompt": "EM4100 benzeri 125 kHz kartlar ile DESFire EV2 arasındaki temel fark nedir?",
+      "context": "",
+      "options": [
+        "İkisi de sabit ID yayınlar, yalnızca frekansları farklıdır",
+        "EM4100 sabit ID yayınlar; DESFire AES ile karşılıklı doğrulama yapar",
+        "İkisi de Crypto1 kullanır, anahtar uzunlukları farklıdır",
+        "DESFire sabit ID yayınlar; EM4100 AES kullanır"
+      ],
+      "answer": 1,
+      "explain": "EM4100 salt okunur, kimlik doğrulaması olmayan bir ID'yi yayınlar. DESFire EV2 AES tabanlı karşılıklı doğrulama sunar; Crypto1 ise MIFARE Classic'e aittir.",
+      "source_id": "",
+      "source": "https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire:MIFARE_DESFIRE",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0042",
+      "area": "FZ03",
+      "prompt": "Akıllı kart AES kullansa bile okuyucu ile kart arasına giren bir röle (relay) düzeneği neden işe yarar?",
+      "context": "",
+      "options": [
+        "Röle AES anahtarını hızla tahmin eder",
+        "Kriptografi kırılmaz; sinyal gerçek karta uzaktan taşınır",
+        "Röle okuyucunun firmware'ini günceller",
+        "Röle kartın seri numarasını değiştirir"
+      ],
+      "answer": 1,
+      "explain": "Röle saldırısı şifreyi kırmaz, meşru kartla okuyucu arasındaki iletişimi uzağa taşır. Mesafe sınırlayan protokoller ve ikinci faktör karşılıktır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Relay_attack",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0043",
+      "area": "FZ03",
+      "prompt": "Okuyucudaki tamper (sabotaj) anahtarı en çok hangi riske karşı uyarı üretir?",
+      "context": "",
+      "options": [
+        "Kapının zorlanması",
+        "Kartın kopyalanması",
+        "Okuyucunun açılıp içine implant takılması",
+        "Şebeke geriliminin düşmesi"
+      ],
+      "answer": 2,
+      "explain": "Tamper anahtarı, okuyucu kapağı söküldüğünde alarm verir. Wiegand hattına takılan ESPKey benzeri implantlar böyle tespit edilebilir.",
+      "source_id": "",
+      "source": "https://www.securityindustry.org/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0044",
+      "area": "FZ04",
+      "prompt": "Spool (makara) güvenlik pimleri kilit açma denemelerini nasıl zorlaştırır?",
+      "context": "",
+      "options": [
+        "Yanlış set hissi verip silindirin ters dönmesine yol açar",
+        "Pimleri tek yönde sertleştirir",
+        "Anahtar profilini her seferinde değiştirir",
+        "Silindiri manyetik alanla kilitler"
+      ],
+      "answer": 0,
+      "explain": "Spool pimler kesme hattında dar bir bel taşır; yanlış set hissi ve geri tepme (counter-rotation) verir, böylece açma işlemi zorlaşır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Pin_tumbler_lock",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0045",
+      "area": "FZ04",
+      "prompt": "Avrupa'da kilit silindirlerinin dayanıklılık sınıflaması hangi standartla yapılır?",
+      "context": "",
+      "options": [
+        "EN 50131",
+        "EN 1303",
+        "EN 62676",
+        "EN 1627"
+      ],
+      "answer": 1,
+      "explain": "EN 1303 silindirleri anahtar farkı, saldırı direnci vb. açısından sınıflar. EN 1627 kapı setleri, EN 50131 alarm, EN 62676 video sistemleri içindir.",
+      "source_id": "",
+      "source": "https://www.en-standard.eu/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0046",
+      "area": "FZ04",
+      "prompt": "Fail-secure elektrikli kilit için hangisi doğrudur?",
+      "context": "",
+      "options": [
+        "Enerji kesilince kilitli kalır",
+        "Yalnızca yangın çıkışlarında kullanılır",
+        "Enerji gerektirmez",
+        "Enerji kesilince açık kalır"
+      ],
+      "answer": 0,
+      "explain": "Fail-secure kilit enerji kesilince kilitli kalır, güvenliği önceler; fail-safe ise açılır, can güvenliğini önceler. Çıkış yönü yine mekanik olarak serbest olmalıdır.",
+      "source_id": "",
+      "source": "https://www.assaabloy.com/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0047",
+      "area": "FZ05",
+      "prompt": "Çift teknolojili (PIR + mikrodalga) dedektörün amacı nedir?",
+      "context": "",
+      "options": [
+        "Kamerayı kayda başlatmak",
+        "Alarm hattını süpervize etmek",
+        "Kapsama alanını iki katına çıkarmak",
+        "İki sensör de tetiklenince alarm vererek yanlış alarmı azaltmak"
+      ],
+      "answer": 3,
+      "explain": "İki farklı algılama prensibi birlikte onay verir. Her teknoloji kendi yanlış alarm kaynaklarına sahiptir, birleşim bunları azaltır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Motion_detector",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0048",
+      "area": "FZ05",
+      "prompt": "24 saat tamper hattının sistemin kurulu olmadığı zamanlarda da çalışmasının nedeni nedir?",
+      "context": "",
+      "options": [
+        "Pil ömrünü uzatır",
+        "Kablo maliyetini azaltır",
+        "Sabotaj girişimi sistem devre dışıyken de yapılabilir",
+        "Sirenin sesini yükseltir"
+      ],
+      "answer": 2,
+      "explain": "Tamper hattı kapak açma veya kablo kesmeyi her zaman izler; sistem kapalıyken yapılan sabotaj da kayda geçer ve alarm üretir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Security_alarm",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0049",
+      "area": "FZ05",
+      "prompt": "Alarmda ikinci iletişim yolu (IP + hücresel) en çok hangi riske karşı eklenir?",
+      "context": "",
+      "options": [
+        "PIR'in evcil hayvana tepki vermesi",
+        "Kapı kontağının mıknatısla yanıltılması",
+        "Kartın klonlanması",
+        "Tek haberleşme hattının kesilmesi veya bozulması"
+      ],
+      "answer": 3,
+      "explain": "Tek yol kesilirse alarm izleme merkezine ulaşmaz. Yedek yol, hat kesme ve karıştırma girişimlerinde izlemenin sürmesini sağlar.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Security_alarm",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0050",
+      "area": "FZ06",
+      "prompt": "DORI standardında bir kişiyi kimlik düzeyinde tanımlamak (Identification) için yaklaşık gereken piksel yoğunluğu nedir?",
+      "context": "",
+      "options": [
+        "25 piksel/metre",
+        "250 piksel/metre",
+        "62 piksel/metre",
+        "125 piksel/metre"
+      ],
+      "answer": 1,
+      "explain": "IEC 62676-4 DORI: Detection 25, Observation 62, Recognition 125, Identification 250 piksel/metre.",
+      "source_id": "",
+      "source": "https://www.axis.com/learning/web-articles/dori",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0051",
+      "area": "FZ06",
+      "prompt": "Giriş kapısında arkadan gün ışığı gelen kamerada siluet sorununu en çok hangi özellik azaltır?",
+      "context": "",
+      "options": [
+        "Daha yüksek bit hızı",
+        "Hareket algılama",
+        "WDR (geniş dinamik aralık)",
+        "Dijital zoom"
+      ],
+      "answer": 2,
+      "explain": "WDR, çok aydınlık ve çok karanlık bölgeleri aynı karede dengeler; kapıdaki kişinin yüzü siluete dönüşmez.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Wide_dynamic_range",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0052",
+      "area": "FZ07",
+      "prompt": "Pasif anahtarsız giriş sisteminde röle saldırısı rolling-code'u kırmadan neden başarılı olabilir?",
+      "context": "",
+      "options": [
+        "Rolling-code algoritması tahmin edilir",
+        "Sinyal kriptografi bozulmadan uzağa taşınır",
+        "Araç firmware'i silinir",
+        "Kumandanın pili boşaltılır"
+      ],
+      "answer": 1,
+      "explain": "Röle saldırısı kod çözmez, araç ile anahtar arasındaki mesajı iletir. UWB ile mesafe ölçümü bu saldırıyı zorlaştırır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Relay_attack",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0053",
+      "area": "FZ07",
+      "prompt": "SDR yazılımındaki waterfall (şelale) ekranı ne gösterir?",
+      "context": "",
+      "options": [
+        "Frekansa karşı sinyal gücünün zaman içindeki değişimi",
+        "Sinyalin şifre çözülmüş içeriği",
+        "Cihazın seri numarasını",
+        "Anten kazancını"
+      ],
+      "answer": 0,
+      "explain": "Waterfall, frekans ekseninde zamanla güç değişimini renkle gösterir; kendi kumandanızın yayınını görsel olarak incelemenizi sağlar.",
+      "source_id": "",
+      "source": "https://www.rtl-sdr.com/about-rtl-sdr/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0054",
+      "area": "FZ08",
+      "prompt": "SPI flash çipinden firmware okunmasına karşı en etkili önlem hangisidir?",
+      "context": "",
+      "options": [
+        "Kasa vidalarını özelleştirmek",
+        "Şifreli firmware ve anahtarı güvenli elemanda tutan secure boot",
+        "Çipin üstüne etiket yapıştırmak",
+        "Seri numarasını gizlemek"
+      ],
+      "answer": 1,
+      "explain": "Fiziksel erişim olan saldırgan flash'ı okuyabilir; şifreli imaj ve donanım güven kökü içeriği anlamsız ve değiştirilemez kılar.",
+      "source_id": "",
+      "source": "https://owasp.org/www-project-embedded-application-security/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0055",
+      "area": "FZ08",
+      "prompt": "Üretimde kapatılmamış JTAG portu hangi riski doğurur?",
+      "context": "",
+      "options": [
+        "Wi-Fi sinyalinin zayıflaması",
+        "Pil ömrünün kısalması",
+        "Ekran parlaklığının düşmesi",
+        "Cihaz belleğine ve çalışma durumuna doğrudan erişim"
+      ],
+      "answer": 3,
+      "explain": "JTAG hata ayıklama arayüzüdür; açık bırakılırsa bellek okuma, durdurma ve kod enjeksiyonuna kapı açar. Üretimde devre dışı bırakılmalıdır.",
+      "source_id": "",
+      "source": "https://owasp.org/www-project-internet-of-things/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0056",
+      "area": "FZ09",
+      "prompt": "Sahte 'CEO acil istiyor' telefonu hangi ikna ilkesini kullanır?",
+      "context": "",
+      "options": [
+        "Kıtlık",
+        "Karşılıklılık",
+        "Sosyal kanıt",
+        "Otorite ve aciliyet"
+      ],
+      "answer": 3,
+      "explain": "Yetkili birinin adına acil talep, kişiyi doğrulama yapmadan harekete geçmeye iter. Karşılık, geri arama ve ikinci kanal doğrulamasıdır.",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/framework/influencing-others/influence-tactics/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0057",
+      "area": "FZ09",
+      "prompt": "Resepsiyonda 'geri arama prosedürü' neyi sağlar?",
+      "context": "",
+      "options": [
+        "Rozet renginin değişmesini",
+        "Talep edenin bilinen kayıtlı numaradan doğrulanmasını",
+        "Ziyaretçi sayısının azalmasını",
+        "Kamera kaydının uzamasını"
+      ],
+      "answer": 1,
+      "explain": "Arayanın verdiği numara yerine kurumun kayıtlı numarası aranır; sahte kimlik iddiası kolayca çürütülür.",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0058",
+      "area": "FZ10",
+      "prompt": "Fiziksel testte 'acil iletişim kişisi' (get-out-of-jail) neden gereklidir?",
+      "context": "",
+      "options": [
+        "Raporu hızlandırmak için",
+        "Ekipmanı iade etmek için",
+        "Yakalanınca yetkiyi 7/24 doğrulayacak biri olması için",
+        "Sigorta ücretini düşürmek için"
+      ],
+      "answer": 2,
+      "explain": "Ekip güvenlik veya polisle karşılaşırsa, yetki mektubunu doğrulayabilecek yetkili kişiye anında ulaşılmalıdır; Iowa olayında bu eksiklik sorun yarattı.",
+      "source_id": "",
+      "source": "https://www.coalfire.com/the-coalfire-blog/iowa-courthouse-incident",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0059",
+      "area": "FZ10",
+      "prompt": "Değerlendirmede toplanan kamera görüntüleri ve fotoğrafların KVKK açısından doğru yönetimi hangisidir?",
+      "context": "",
+      "options": [
+        "Sosyal medyada örnek olarak yayımlamak",
+        "Süresiz saklayıp ekip içinde paylaşmak",
+        "Ekip üyelerinin kişisel telefonlarında tutmak",
+        "Sözleşmede belirlenen süre ve yöntemle saklama ve imha"
+      ],
+      "answer": 3,
+      "explain": "Kişisel veri içeren görseller asgari düzeyde toplanmalı, şifreli saklanmalı ve sözleşmede belirlenen sürede imha edilmelidir.",
+      "source_id": "",
+      "source": "https://www.kvkk.gov.tr/",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0060",
+      "area": "TOOLS",
+      "prompt": "USB Rubber Ducky benzeri cihazlara karşı en etkili kontrol hangisidir?",
+      "context": "",
+      "options": [
+        "Parola uzunluğunu artırmak",
+        "USB aygıt beyaz listesi ve HID cihaz kısıtlaması",
+        "Bilgisayar ekranına koruyucu takmak",
+        "USB portlarını boyamak"
+      ],
+      "answer": 1,
+      "explain": "Bu cihazlar klavye (HID) gibi tanıtılır. Uç nokta politikasıyla izinli aygıtları sınırlamak veya yeni HID'leri onaya bağlamak etkilidir.",
+      "source_id": "",
+      "source": "https://shop.hak5.org/products/usb-rubber-ducky",
+      "added": "2026-10-02",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0061",
+      "area": "TOOLS",
+      "prompt": "Kismet'in savunma tarafındaki en uygun kullanımı hangisidir?",
+      "context": "",
+      "options": [
+        "Kilit silindirini açmak",
+        "Pasif Wi-Fi izleme ile yetkisiz erişim noktası veya drop box tespiti",
+        "Kameraları uzaktan yönetmek",
+        "Kartların şifresini kırmak"
+      ],
+      "answer": 1,
+      "explain": "Kismet kablosuz ağları pasif olarak dinleyip cihazları listeler; toplantı odalarına bırakılan yetkisiz AP veya implantları bulmada işe yarar.",
+      "source_id": "",
+      "source": "https://www.kismetwireless.net/",
+      "added": "2026-10-02",
+      "author": "daily"
     }
   ]
 }

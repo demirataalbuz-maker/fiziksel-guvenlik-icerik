@@ -192,6 +192,45 @@
       "lesson": "Kritik tesislerde yasal pasif drone tespiti (Remote ID dinleme) ve standart olay kaydı (saat, yön, süre, görüntü) kullanılmalı; karıştırma gibi aktif önlemler sivil kurumlara genelde yasaktır, bu yüzden yetkili makamlara bildirim prosedürü tanımlanmalı.",
       "source": "https://sky.trade/articles/remote-id-2026",
       "source_id": ""
+    },
+    {
+      "id": "SC-0011",
+      "day": "2026-10-02",
+      "title": "Kaybolan master anahtar",
+      "area": "FZ04",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili bir değerlendirmede orta ölçekli bir ofisin tüm katlarını açan tek bir master anahtar bakım şirketi personelinde bulunuyor. Anahtar üç ay önce bir teknisyenin elinde kayboldu ancak silindirler değiştirilmedi. Anahtar kaydı elle tutulan bir defterde duruyor ve kimin hangi anahtarı iade ettiği güncel değil. Ekip, kayıp anahtarın etkisini değerlendirirken sunucu odasının da aynı master sistemine bağlı olduğunu görüyor. Odada ayrıca kart okuyucu yok, yalnızca mekanik silindir var. Yönetim riski düşük görüyor çünkü anahtarı bulan kişinin hangi binaya ait olduğunu bilmeyeceğini düşünüyor.",
+      "steps": [
+        "Anahtar envanteri incelendi",
+        "Master hiyerarşisi çıkarıldı",
+        "Sunucu odasının yalnızca mekanik kilitle korunduğu görüldü",
+        "Kayıp tarihi ile silindir değişim kaydı karşılaştırıldı"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "Kayıp master anahtar sonrası silindirler yeniden anahtarlanmadı (FZ04). Master sistemde tek anahtar tüm kapıları açar ve kritik oda ikinci bir katmanla (kart, PIN) korunmuyor. Kayıp anahtar fiilen tüm tesise erişim demektir; 'anahtarı bulan kim bilecek' varsayımı güvenlik değildir.",
+      "lesson": "Kayıp anahtar durumunda yeniden anahtarlama, anahtar tutanağının güncel tutulması, kritik odalarda ek erişim katmanı ve kısıtlı anahtar sistemleri kullanın.",
+      "source": "https://en.wikipedia.org/wiki/Master_keying",
+      "source_id": ""
+    },
+    {
+      "id": "SC-0012",
+      "day": "2026-10-02",
+      "title": "Bypass'ta unutulan bölge",
+      "area": "FZ05",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili bir değerlendirmede depo binasında alarm sistemi var. Arka koridordaki kapı kontağı bir ay önce arızalandığı için teknisyen o bölgeyi bypass etmiş ve not düşmemiş. Bölge hala bypass durumunda olduğundan o kapı açıldığında alarm üretmiyor. Sistem her gün kurulup devre dışı bırakılıyor ve operatör ekranındaki bypass uyarısı herkesin alıştığı bir sarı ışık. Değerlendirme ekibi kapıdan kontrollü şekilde geçtiğinde izleme merkezi hiçbir bildirim almadı. Yönetim alarm sisteminin çalıştığını düşünüyordu.",
+      "steps": [
+        "Alarm bölge listesi alındı",
+        "Bypass durumundaki bölge tespit edildi",
+        "Kapı açıldığında olay kaydı olmadığı doğrulandı"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "Arızalı bölgenin kalıcı bypass'ta bırakılması ve bu durumun izlenmemesi (FZ05). Bypass edilen bölge tespit yeteneğini sıfırlar; sarı uyarıya alışma 'alarm kör noktası' yaratır. Sistemin çalışıyor görünmesi, her bölgenin çalıştığı anlamına gelmez.",
+      "lesson": "Bypass'ı süreli ve onaylı yapın, her kurulumda bypass listesini raporlayın, arızalı bileşeni hızla onarın ve bölge testini periyodik yürütün.",
+      "source": "https://en.wikipedia.org/wiki/Security_alarm",
+      "source_id": ""
     }
   ]
 }
