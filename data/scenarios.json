@@ -246,7 +246,7 @@
         "Test odasında okuyucu davranışını gözle"
       ],
       "question": "Kusur nerede?",
-      "answer": "FZ03: MIFARE Classic Crypto1 zayıflığı ve zayıf anahtar kullanımı; çünkü anahtar kurtarılınca kart klonlanabilir.",
+      "answer": "FZ03: MIFARE Classic tabanlı kartlarda Crypto1 zayıflığı (CVE-2026-4648'deki CasfID bileklik vakası gibi) ve zayıf anahtar kullanımı; çünkü anahtar kurtarılınca kart klonlanabilir.",
       "lesson": "DESFire/AES gibi karşılıklı doğrulamalı kartlara geçiş ve anahtar çeşitlendirme.",
       "source": "https://cveawg.mitre.org/api/cve/CVE-2026-4648",
       "source_id": ""

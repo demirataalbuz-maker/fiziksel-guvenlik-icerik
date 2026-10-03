@@ -1255,7 +1255,7 @@
         "Kapı kontağını mıknatısla atlatmayı"
       ],
       "answer": 0,
-      "explain": "Crypto1 zayıflığı nedeniyle bir anahtar bilindiğinde diğerleri kurtarılabilir (CVE-2026-4648 kaydı bu sınıfı tarif eder).",
+      "explain": "Crypto1 zayıflığı nedeniyle bir anahtar bilindiğinde diğerleri kurtarılabilir (CVE-2026-4648: CasfID NFC bileklikleri, FM11RF08S, Backdoored Nested Attack ile anahtar kurtarma).",
       "source_id": "",
       "source": "https://cveawg.mitre.org/api/cve/CVE-2026-4648",
       "added": "2026-10-03",
