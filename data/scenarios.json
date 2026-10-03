@@ -231,6 +231,44 @@
       "lesson": "Bypass'ı süreli ve onaylı yapın, her kurulumda bypass listesini raporlayın, arızalı bileşeni hızla onarın ve bölge testini periyodik yürütün.",
       "source": "https://en.wikipedia.org/wiki/Security_alarm",
       "source_id": ""
+    },
+    {
+      "id": "SC-0013",
+      "day": "2026-10-03",
+      "title": "Klonlanan otel kapı kartı",
+      "area": "FZ03",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili bir değerlendirmede ekip, kendi test odasındaki MIFARE Classic tabanlı oda kartını kendi ekipmanıyla inceledi. Kartın varsayılan veya tahmin edilebilir anahtarlar kullandığı görüldü. Anahtarlar kurtarıldı ve kart verisi yetkili şekilde test kartına yazıldı. Aynı otelin test için ayrılmış başka bir odasında okuyucunun davranışı doğrulandı ve bulgu yönetime raporlandı.",
+      "steps": [
+        "Kendi kartını incele",
+        "Anahtar zayıflığını doğrula",
+        "Test odasında okuyucu davranışını gözle"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ03: MIFARE Classic Crypto1 zayıflığı ve zayıf anahtar kullanımı; çünkü anahtar kurtarılınca kart klonlanabilir.",
+      "lesson": "DESFire/AES gibi karşılıklı doğrulamalı kartlara geçiş ve anahtar çeşitlendirme.",
+      "source": "https://cveawg.mitre.org/api/cve/CVE-2026-4648",
+      "source_id": ""
+    },
+    {
+      "id": "SC-0014",
+      "day": "2026-10-03",
+      "title": "Gece açık kalan servis kapısı",
+      "area": "FZ02",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili bir gözlemde, bir depo tesisinde servis kapısının vardiya değişiminde kapı stoperiyle açık tutulduğu görüldü. Kamera kapıyı kaydediyordu ama kayıtlar kimse tarafından izlenmiyordu. Ekip durumu fotoğrafsız not aldı, içeri girmedi ve bulguyu raporladı.",
+      "steps": [
+        "Gözlem yap",
+        "Kayıt izleme düzenini sor",
+        "Kapsam dışına çıkma"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ02: Çevre kapısı prosedürü ve izleme eksikliği; çünkü açık kapı ile izlenmeyen kamera caydırmayı ve tespiti birlikte devre dışı bırakır.",
+      "lesson": "Kapı açık kaldı alarmı (door held open) ve canlı izleme/vardiya prosedürü.",
+      "source": "https://www.cisa.gov/topics/physical-security",
+      "source_id": ""
     }
   ]
 }

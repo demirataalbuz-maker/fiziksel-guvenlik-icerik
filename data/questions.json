@@ -1098,6 +1098,582 @@
       "source": "https://www.kismetwireless.net/",
       "added": "2026-10-02",
       "author": "daily"
+    },
+    {
+      "id": "Q-0062",
+      "area": "FZ01",
+      "prompt": "Yetkili bir değerlendirmede hedef binanın giriş-çıkış saatlerini kimseyle etkileşime girmeden gözlemlemek hangi keşif türüdür?",
+      "context": "",
+      "options": [
+        "Pasif fiziksel gözlem; hedefle temas yok",
+        "Aktif pretexting ile bilgi toplama",
+        "Okuyucuya tamper testi yapma",
+        "Ağ üzerinde port taraması yapma"
+      ],
+      "answer": 0,
+      "explain": "Hedefle etkileşim yoksa pasif keşiftir; savunma için dışarıdan görünen akışı azaltmak gerekir.",
+      "source_id": "",
+      "source": "https://www.cisa.gov/topics/physical-security",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0063",
+      "area": "FZ01",
+      "prompt": "'Rozet fotoğrafı sızıntısı' riskini azaltmak için en etkili savunma adımı hangisidir?",
+      "context": "",
+      "options": [
+        "Rozet ve ortam paylaşımını sosyal medya politikasına bağlamak",
+        "Tüm kamera çözünürlüğünü artırmak",
+        "Kapı kilitlerini sık sık değiştirmek",
+        "Okuyucu firmware'ini güncellemek"
+      ],
+      "answer": 0,
+      "explain": "Sızıntı kaynağı bilgi paylaşımıdır; teknik kontroller bu kanalı kapatmaz.",
+      "source_id": "",
+      "source": "https://www.cisa.gov/topics/physical-security",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0064",
+      "area": "FZ01",
+      "prompt": "Arama motoru sorgularıyla bir kuruluşa ait herkese açık kamera arayüzünü bulmak hangi türdür?",
+      "context": "",
+      "options": [
+        "Pasif OSINT; hedefe doğrudan paket gitmez",
+        "Aktif zafiyet sömürüsü",
+        "Sosyal mühendislik",
+        "Donanım tersine mühendisliği"
+      ],
+      "answer": 0,
+      "explain": "Önbellek/indeks kullanımı temas gerektirmez; ancak bulunan arayüze giriş yetkisiz erişimdir.",
+      "source_id": "",
+      "source": "https://owasp.org/www-project-web-security-testing-guide/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0065",
+      "area": "FZ02",
+      "prompt": "Çevre güvenliğinde katmanlı savunma (defense in depth) neyi öngörür?",
+      "context": "",
+      "options": [
+        "Caydırma, tespit, geciktirme ve müdahale katmanlarının birlikte çalışmasını",
+        "Tüm bütçenin dış çite harcanmasını",
+        "Yalnızca kamera sayısını artırmayı",
+        "Tüm girişleri kalıcı kapatmayı"
+      ],
+      "answer": 0,
+      "explain": "Tek katman aşılınca sistem çökmesin diye katmanlar süre kazandırır.",
+      "source_id": "",
+      "source": "https://www.cisa.gov/topics/physical-security",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0066",
+      "area": "FZ02",
+      "prompt": "Turnike ile mantrap arasındaki temel fark hangisidir?",
+      "context": "",
+      "options": [
+        "Mantrap kapalı çift kapılı bölmede tek kişilik geçişi zorlar",
+        "Turnike her zaman kartsız çalışır",
+        "Mantrap yalnızca yangın kapısıdır",
+        "İkisi arasında hiçbir fark yoktur"
+      ],
+      "answer": 0,
+      "explain": "Mantrap tailgating'i fiziksel olarak engeller; turnike daha çok akış kontrolüdür.",
+      "source_id": "",
+      "source": "https://www.cisa.gov/topics/physical-security",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0067",
+      "area": "FZ02",
+      "prompt": "CPTED'de bölge tanımlama (territorial reinforcement) örneği hangisidir?",
+      "context": "",
+      "options": [
+        "Ortak ve özel alanı zemin, tabela ve peyzajla görsel ayırmak",
+        "Kameraları gizlemek",
+        "Kapı kilitlerini kaldırmak",
+        "Aydınlatmayı kapatmak"
+      ],
+      "answer": 0,
+      "explain": "Alan sahipliği hissi yetkisiz kişiyi görünür kılar ve caydırır.",
+      "source_id": "",
+      "source": "https://www.cpted.net/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0068",
+      "area": "FZ02",
+      "prompt": "Çit dibindeki bitki örtüsü kameraların görüş hattını kapatıyor. Bu hangi bulgudur?",
+      "context": "",
+      "options": [
+        "Doğal gözetim ve görüş hattı kaybı; bakım eksikliği",
+        "Kart okuyucu zafiyeti",
+        "Alarm hat süpervizyonu hatası",
+        "Yetki mektubu eksikliği"
+      ],
+      "answer": 0,
+      "explain": "CPTED gözetim ilkesi bakımsızlıkla bozulur.",
+      "source_id": "",
+      "source": "https://www.cpted.net/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0069",
+      "area": "FZ03",
+      "prompt": "125 kHz EM4100 kart ile MIFARE DESFire EV2 arasındaki en önemli güvenlik farkı nedir?",
+      "context": "",
+      "options": [
+        "DESFire karşılıklı doğrulama ve AES kullanır; EM4100 sabit ID yayar",
+        "İkisi de yalnızca sabit ID yayar",
+        "EM4100 AES ile şifrelenir",
+        "DESFire sadece 125 kHz'de çalışır"
+      ],
+      "answer": 0,
+      "explain": "Sabit ID klonlanır; karşılıklı doğrulama + AES klonu ve tekrarı zorlaştırır.",
+      "source_id": "",
+      "source": "https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire:MC_53413",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0070",
+      "area": "FZ03",
+      "prompt": "MIFARE Classic'te 'nested attack' neyi hedefler?",
+      "context": "",
+      "options": [
+        "Bilinen bir sektör anahtarından diğer anahtarları Crypto1 zayıflığıyla çıkarmayı",
+        "Okuyucunun Wi-Fi parolasını",
+        "Kartın silikon çipini fiziksel kırmayı",
+        "Kapı kontağını mıknatısla atlatmayı"
+      ],
+      "answer": 0,
+      "explain": "Crypto1 zayıflığı nedeniyle bir anahtar bilindiğinde diğerleri kurtarılabilir (CVE-2026-4648 kaydı bu sınıfı tarif eder).",
+      "source_id": "",
+      "source": "https://cveawg.mitre.org/api/cve/CVE-2026-4648",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0071",
+      "area": "FZ03",
+      "prompt": "Wiegand hattına takılan bir implantın veriyi okuyabilmesinin temel nedeni nedir?",
+      "context": "",
+      "options": [
+        "Wiegand'ın şifresiz ve kimlik doğrulamasız olması",
+        "Hattın kuantum şifrelenmesi",
+        "Okuyucunun bluetooth kullanması",
+        "Kartın pil içermesi"
+      ],
+      "answer": 0,
+      "explain": "OSDP Secure Channel şifreli ve doğrulamalıdır; Wiegand değildir.",
+      "source_id": "",
+      "source": "https://www.securityindustry.org/industry-standards/osdp/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0072",
+      "area": "FZ03",
+      "prompt": "Röle saldırısına karşı akıllı kart protokolünde en etkili önlem hangisidir?",
+      "context": "",
+      "options": [
+        "Mesafe sınırlama (distance bounding) ya da zamanlama kontrolü",
+        "Daha uzun PIN yazmak",
+        "Kart rengini değiştirmek",
+        "Okuyucuyu duvara gömmek"
+      ],
+      "answer": 0,
+      "explain": "Röle şifreyi kırmaz; ek gecikme/mesafe tespit edilirse engellenir.",
+      "source_id": "",
+      "source": "https://www.nxp.com/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0073",
+      "area": "FZ04",
+      "prompt": "Elektrikli kilitlerde fail-safe ile fail-secure farkı nedir?",
+      "context": "",
+      "options": [
+        "Fail-safe güç kesilince açılır, fail-secure kilitli kalır",
+        "İkisi de güç kesilince kilitli kalır",
+        "Fail-safe yalnızca dış kapılarda kullanılır",
+        "Aralarında fark yoktur"
+      ],
+      "answer": 0,
+      "explain": "Kaçış yollarında can güvenliği için fail-safe, güvenlik odaklı alanlarda fail-secure seçilir.",
+      "source_id": "",
+      "source": "https://www.iccsafe.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0074",
+      "area": "FZ04",
+      "prompt": "Kilitlerde güvenlik pimi (spool/serrated) kullanımının amacı nedir?",
+      "context": "",
+      "options": [
+        "Açma girişimlerinde yanıltıcı geri bildirim vererek zorlaştırmak",
+        "Anahtarı hafifletmek",
+        "Kilidi ucuzlatmak",
+        "Tamper alarmı üretmek"
+      ],
+      "answer": 0,
+      "explain": "Yanlış set geri bildirimi tekniği zorlaştırır; tek başına tam koruma değildir.",
+      "source_id": "",
+      "source": "https://www.uni-ce.com/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0075",
+      "area": "FZ04",
+      "prompt": "Kapı kasasındaki dil koruyucu (latch guard) hangi saldırıyı azaltır?",
+      "context": "",
+      "options": [
+        "Dilin kart/şerit ile geri itilmesi (latch slipping)",
+        "Anahtar kopyalama",
+        "RFID klonlama",
+        "Kamera körleştirme"
+      ],
+      "answer": 0,
+      "explain": "Koruyucu dile erişimi engeller; silindir hiç açılmadan geçişi zorlaştırır.",
+      "source_id": "",
+      "source": "https://www.iccsafe.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0076",
+      "area": "FZ04",
+      "prompt": "Anahtar kontrol (key control) prosedürü olmayan tesiste en büyük risk nedir?",
+      "context": "",
+      "options": [
+        "Kayıp veya kopyalanan anahtarların izlenememesi",
+        "Wi-Fi yavaşlığı",
+        "Kamera çözünürlüğü",
+        "Alarm hat hatası"
+      ],
+      "answer": 0,
+      "explain": "Sayım ve imzalı kayıt olmadan yetkisiz erişim fark edilmez.",
+      "source_id": "",
+      "source": "https://www.asisonline.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0077",
+      "area": "FZ05",
+      "prompt": "Alarm hattında çift EOL (double EOL) direnci neyi sağlar?",
+      "context": "",
+      "options": [
+        "Kapı durumunu ve tamper'ı aynı hatta ayırt etmeyi",
+        "Daha çok enerji harcamayı",
+        "Alarmı sessiz yapmayı",
+        "Kablosuz sinyali güçlendirmeyi"
+      ],
+      "answer": 0,
+      "explain": "Çift EOL birden çok durumu (normal, alarm, tamper, kısa devre) ayırt eder.",
+      "source_id": "",
+      "source": "https://www.nfpa.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0078",
+      "area": "FZ05",
+      "prompt": "PIR dedektörde maskeleme (masking) girişimini tespit eden özellik hangisidir?",
+      "context": "",
+      "options": [
+        "Anti-masking (yakın alan tespiti)",
+        "Daha büyük kasa",
+        "Daha parlak LED",
+        "Pil tasarrufu"
+      ],
+      "answer": 0,
+      "explain": "Önüne engel konması görüş alanını kapatır; anti-masking bunu arıza/alarm yapar.",
+      "source_id": "",
+      "source": "https://www.nfpa.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0079",
+      "area": "FZ05",
+      "prompt": "Yanlış alarm oranını azaltmanın en doğru yolu hangisidir?",
+      "context": "",
+      "options": [
+        "Video/ses doğrulama ve çift teknolojili sensör kullanmak",
+        "Alarmları kapatmak",
+        "Sirenleri kısmak",
+        "Hat süpervizyonunu kaldırmak"
+      ],
+      "answer": 0,
+      "explain": "Doğrulama müdahale güvenilirliğini artırır.",
+      "source_id": "",
+      "source": "https://www.nfpa.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0080",
+      "area": "FZ05",
+      "prompt": "Kablosuz alarm sensörlerine karşı jammer tehdidini azaltan özellik hangisidir?",
+      "context": "",
+      "options": [
+        "Süpervizyon sinyali kaybında arıza/alarm üreten sistem",
+        "Daha parlak LED",
+        "Sensör rengi",
+        "Sık pil değişimi"
+      ],
+      "answer": 0,
+      "explain": "Düzenli heartbeat kaybı tespit edilirse bozucu girişim görünür olur.",
+      "source_id": "",
+      "source": "https://www.nfpa.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0081",
+      "area": "FZ06",
+      "prompt": "DORI'de Recognition ile Identification arasındaki fark nedir?",
+      "context": "",
+      "options": [
+        "Tanıma tanıdık kişiyi seçer, kimlik belirleme tanımadığı kişiyi yüksek detayla ayırt eder",
+        "Aynı şeylerdir",
+        "Tanıma sadece geceleri çalışır",
+        "Kimlik belirleme sadece plaka içindir"
+      ],
+      "answer": 0,
+      "explain": "Piksel yoğunluğu arttıkça Detection < Observation < Recognition < Identification olur.",
+      "source_id": "",
+      "source": "https://www.iec.ch/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0082",
+      "area": "FZ06",
+      "prompt": "NVR/kamera ağ erişiminde en kritik savunma adımı hangisidir?",
+      "context": "",
+      "options": [
+        "Varsayılan parolaları değiştirmek, VLAN ile ayırmak, internete açmamak",
+        "Kayıt süresini azaltmak",
+        "Kamera sayısını artırmak",
+        "IR ışığını kapatmak"
+      ],
+      "answer": 0,
+      "explain": "Kamera ve NVR'lar sıkça varsayılan kimlikle ele geçirilir.",
+      "source_id": "",
+      "source": "https://www.cisa.gov/topics/cybersecurity-best-practices",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0083",
+      "area": "FZ07",
+      "prompt": "HackRF One ile RTL-SDR arasındaki yetenek farkı nedir?",
+      "context": "",
+      "options": [
+        "HackRF hem alıp hem verebilir, RTL-SDR yalnızca alır",
+        "RTL-SDR vericidir",
+        "İkisi de yalnızca alır",
+        "HackRF sadece FM alır"
+      ],
+      "answer": 0,
+      "explain": "Verme yeteneği yasal sınırlara tabidir; sadece kendi cihazında ve izinli ortamda kullan.",
+      "source_id": "",
+      "source": "https://greatscottgadgets.com/hackrf/one/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0084",
+      "area": "FZ07",
+      "prompt": "433 MHz kumandalarda OOK ile FSK modülasyonu arasındaki fark nedir?",
+      "context": "",
+      "options": [
+        "OOK taşıyıcıyı aç/kapa yapar, FSK frekansı değiştirir",
+        "İkisi aynıdır",
+        "FSK genliği değiştirir",
+        "OOK frekansı kaydırır"
+      ],
+      "answer": 0,
+      "explain": "SDR waterfall ekranında ikisi farklı görünür.",
+      "source_id": "",
+      "source": "https://www.rtl-sdr.com/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0085",
+      "area": "FZ08",
+      "prompt": "Üretimde kapatılmamış UART konsolu bir IoT kapı kontrol cihazında hangi riski doğurur?",
+      "context": "",
+      "options": [
+        "Kök kabuk erişimi ve kimlik bilgisi sızıntısı",
+        "Kamera bulanıklığı",
+        "Alarm gecikmesi",
+        "Pil ömrü kısalması"
+      ],
+      "answer": 0,
+      "explain": "Üretim firmware'inde UART devre dışı bırakılmalı veya kimlik doğrulama istemelidir.",
+      "source_id": "",
+      "source": "https://owasp.org/www-project-internet-of-things/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0086",
+      "area": "FZ08",
+      "prompt": "Secure boot'un amacı nedir?",
+      "context": "",
+      "options": [
+        "Yalnızca imzalı firmware'in çalışmasını sağlamak",
+        "Cihazı hızlandırmak",
+        "Wi-Fi'yi kapatmak",
+        "Pili korumak"
+      ],
+      "answer": 0,
+      "explain": "İmzasız veya değiştirilmiş firmware'in çalışmasını engeller.",
+      "source_id": "",
+      "source": "https://owasp.org/www-project-internet-of-things/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0087",
+      "area": "FZ09",
+      "prompt": "Sahte kurye pretextini azaltan en iyi kontrol hangisidir?",
+      "context": "",
+      "options": [
+        "Randevu doğrulaması ve refakatli teslim alanı",
+        "Kurye kıyafeti kuralı",
+        "Kapı rengini değiştirmek",
+        "Daha çok kamera"
+      ],
+      "answer": 0,
+      "explain": "Sosyal mühendislik teknikten çok prosedürle azalır.",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0088",
+      "area": "FZ09",
+      "prompt": "Vishing'i tespit etmede en güçlü işaret hangisidir?",
+      "context": "",
+      "options": [
+        "Aciliyet baskısı + doğrulama adımını atlatma talebi",
+        "Arayanın nazik olması",
+        "Hat kalitesi",
+        "Arama saati"
+      ],
+      "answer": 0,
+      "explain": "Aciliyet ve otorite baskısı sosyal mühendislik imzasıdır.",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0089",
+      "area": "FZ10",
+      "prompt": "Fiziksel sızma testinde kapsam dışı alanları kim belirler?",
+      "context": "",
+      "options": [
+        "Müşteri yetkilisi, imzalı yetki ve kapsam belgesiyle",
+        "Test ekibi kendi başına",
+        "Güvenlik görevlisi sözlü olarak",
+        "Kimse"
+      ],
+      "answer": 0,
+      "explain": "Yazılı kapsam hukuki koruma sağlar.",
+      "source_id": "",
+      "source": "https://www.pentest-standard.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0090",
+      "area": "FZ10",
+      "prompt": "Testte gerçek bir izinsiz kişiyle karşılaşma şüphesinde ne yapılır?",
+      "context": "",
+      "options": [
+        "Testi durdurup acil iletişim kişisini aramak",
+        "Test devam eder",
+        "Olay yerinden kaçılır",
+        "Kişiye fiziksel müdahale edilir"
+      ],
+      "answer": 0,
+      "explain": "Durdurma ve acil iletişim prosedürü sözleşmede bulunur.",
+      "source_id": "",
+      "source": "https://www.pentest-standard.org/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0091",
+      "area": "TOOLS",
+      "prompt": "ProxmarkPro ile Flipper Zero arasındaki ana hedef farkı nedir?",
+      "context": "",
+      "options": [
+        "ProxmarkPro RFID/NFC analizine odaklı taşınabilir profesyonel cihazdır; Flipper genel amaçlı çok araçlı cihazdır",
+        "Flipper SDR vericisidir",
+        "İkisi aynı cihazdır",
+        "ProxmarkPro yalnızca Wi-Fi içindir"
+      ],
+      "answer": 0,
+      "explain": "ProxmarkPro değiştirilebilir LF/HF antenli, bağlantısız saha kullanımlı RFID test aracıdır; kendi/yetkili kartlarda kullanılır.",
+      "source_id": "",
+      "source": "https://www.mouser.de/new/crowd-supply/crowd-supply-proxmarkpro-kit",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0092",
+      "area": "TOOLS",
+      "prompt": "Counter-surveillance (TSCM) cihazlarının savunma kullanımı nedir?",
+      "context": "",
+      "options": [
+        "Yetkili alanda gizli verici/kameraları RF ve optik tarama ile tespit etmek",
+        "Binanın duvarlarını delmek",
+        "Kilit açmak",
+        "Kart klonlamak"
+      ],
+      "answer": 0,
+      "explain": "TSCM tespit odaklıdır.",
+      "source_id": "",
+      "source": "https://www.dni.gov/",
+      "added": "2026-10-03",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0093",
+      "area": "TOOLS",
+      "prompt": "Kendi RFID kartını test ederken doğru etik yaklaşım hangisidir?",
+      "context": "",
+      "options": [
+        "Yalnızca kendi veya yazılı izinli kartlarla çalışmak",
+        "Komşunun kartını denemek",
+        "İzinsiz tesiste denemek",
+        "Başkasının kartını klonlayıp kullanmak"
+      ],
+      "answer": 0,
+      "explain": "İzin her aracın önkoşuludur.",
+      "source_id": "",
+      "source": "https://www.pentest-standard.org/",
+      "added": "2026-10-03",
+      "author": "daily"
     }
   ]
 }

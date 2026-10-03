@@ -709,6 +709,27 @@
         "2026"
       ],
       "icon": "🛸"
+    },
+    {
+      "id": "TOOL-036",
+      "name": "ProxmarkPro",
+      "type": "both",
+      "vendor": "Crowd Supply",
+      "level": "advanced",
+      "areas": [
+        "FZ03"
+      ],
+      "what": "RFID/NFC sistemlerini hızla keşfetmek ve zayıflıkları göstermek için tasarlanmış taşınabilir test cihazı; değiştirilebilir LF/HF antenler, pil ve bağlantısız saha kullanımı.",
+      "how_to_use": "Yalnızca kendi kartlarında veya yazılı yetkili kapsamda; kart tipini tanımla, eski 125 kHz/MIFARE Classic envanteri çıkar ve DESFire/OSDP geçiş planı yap. Başkasının kartını izinsiz okumak mahremiyet ve hukuka aykırıdır.",
+      "install": "Crowd Supply kiti: ana ünite, LF/HF anten, etiketler, microSD.",
+      "source": "https://www.mouser.de/new/crowd-supply/crowd-supply-proxmarkpro-kit",
+      "tags": [
+        "rfid",
+        "nfc",
+        "proxmark",
+        "kirmizi-takim"
+      ],
+      "icon": "💳"
     }
   ]
 }
