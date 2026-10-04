@@ -1674,6 +1674,492 @@
       "source": "https://www.pentest-standard.org/",
       "added": "2026-10-03",
       "author": "daily"
+    },
+    {
+      "id": "Q-0094",
+      "area": "FZ01",
+      "prompt": "Yetkili keşifte hedefin halka açık iş ilanlarından kullandığı kapı kontrol markasını çıkarmak hangi türdür?",
+      "context": "",
+      "options": [
+        "Pasif OSINT; hedefle etkileşim yok",
+        "Aktif tarama; hedefe paket gider",
+        "Sosyal mühendislik; çalışanla konuşulur",
+        "Fiziksel sızma; binaya girilir"
+      ],
+      "answer": 0,
+      "explain": "İş ilanı halka açık kaynaktır; hedefe istek gitmez, bu yüzden pasif OSINT'tir.",
+      "source_id": "",
+      "source": "https://attack.mitre.org/techniques/T1591/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0095",
+      "area": "FZ01",
+      "prompt": "Street View ile bina girişlerini incelemek neden keşifte tercih edilir?",
+      "context": "",
+      "options": [
+        "Hedef fark etmeden giriş yerleşimi görülür",
+        "Kilit modeli kesin okunur",
+        "Alarm kodu görüntüden çıkar",
+        "Çalışan listesi elde edilir"
+      ],
+      "answer": 0,
+      "explain": "Street View pasif ve iz bırakmaz; genel yerleşimi gösterir ama kilit modeli veya kod vermez.",
+      "source_id": "",
+      "source": "https://attack.mitre.org/techniques/T1591/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0096",
+      "area": "FZ01",
+      "prompt": "Çalışan profilinde 'Lenel OnGuard yöneticisi' yazması hangi riski büyütür?",
+      "context": "",
+      "options": [
+        "Hedefli pretext için teknoloji istihbaratı sızar",
+        "Kart okuyucu firmware'i çalınır",
+        "Kameralar uzaktan açılır",
+        "Alarm paneli resetlenir"
+      ],
+      "answer": 0,
+      "explain": "Ürün bilgisi, sahte BT/satıcı pretext'ini inandırıcı kılar; savunma: sosyal medya politikası ve farkındalık.",
+      "source_id": "",
+      "source": "https://attack.mitre.org/techniques/T1591/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0097",
+      "area": "FZ02",
+      "prompt": "Çitin hemen yanında duran konteyner hangi bulguya yol açar?",
+      "context": "",
+      "options": [
+        "Tırmanma basamağı olur; clear zone ihlali",
+        "Kamera çözünürlüğü artar",
+        "Çit yük dayanımı artar",
+        "Alarm hassasiyeti düşer"
+      ],
+      "answer": 0,
+      "explain": "Çit hattı yakınındaki nesneler tırmanma yardımcısıdır; temiz bölge kuralı ihlal edilir.",
+      "source_id": "",
+      "source": "https://www.npsa.gov.uk/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0098",
+      "area": "FZ02",
+      "prompt": "Door forced ile door held alarmı farkı nedir?",
+      "context": "",
+      "options": [
+        "Forced: okutmadan açılma; held: geçiş sonrası kapanmama",
+        "Forced: kart okutuldu; held: kapı kapalı",
+        "İkisi aynı olayı bildirir",
+        "Forced yalnızca yangın içindir"
+      ],
+      "answer": 0,
+      "explain": "Forced yetkisiz açılmayı, held yetkili geçişten sonra kapının açık kalmasını (tailgating fırsatı) bildirir.",
+      "source_id": "",
+      "source": "https://www.npsa.gov.uk/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0099",
+      "area": "FZ02",
+      "prompt": "Mantrap ile ortak turnikenin tailgating'e karşı farkı nedir?",
+      "context": "",
+      "options": [
+        "Mantrap iki kapı arasında tek kişiyi doğrular",
+        "Turnike kimlik doğrular, mantrap etmez",
+        "Mantrap yalnızca kamera içerir",
+        "İkisi aynı seviyede korur"
+      ],
+      "answer": 0,
+      "explain": "Mantrap ardışık kapı ve doluluk sensörüyle tek kişiyi zorlar; turnike atlanabilir.",
+      "source_id": "",
+      "source": "https://www.npsa.gov.uk/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0100",
+      "area": "FZ03",
+      "prompt": "Wiegand ile OSDP arasındaki temel güvenlik farkı nedir?",
+      "context": "",
+      "options": [
+        "OSDP çift yönlü, şifreli Secure Channel sunar",
+        "Wiegand şifreli, OSDP açık",
+        "İkisi de AES kullanır",
+        "OSDP tek yönlüdür"
+      ],
+      "answer": 0,
+      "explain": "Wiegand veriyi açık ve tek yönlü taşır; OSDP v2 Secure Channel ile AES sağlar.",
+      "source_id": "",
+      "source": "https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0101",
+      "area": "FZ03",
+      "prompt": "MIFARE Classic'in ana zafiyeti hangisidir?",
+      "context": "",
+      "options": [
+        "Kırılmış Crypto1 şifrelemesi",
+        "AES anahtarı kısa",
+        "Kart pil gerektirir",
+        "Yalnızca 125 kHz çalışır"
+      ],
+      "answer": 0,
+      "explain": "Crypto1 kriptografik olarak kırılmıştır; DESFire EV2/EV3 gibi AES kartlara geçiş önerilir.",
+      "source_id": "",
+      "source": "https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0102",
+      "area": "FZ03",
+      "prompt": "125 kHz prox kart klonlamasını en iyi hangi önlem zorlaştırır?",
+      "context": "",
+      "options": [
+        "Karşılıklı doğrulamalı şifreli kart (DESFire/SEOS)",
+        "Daha kalın kart",
+        "Okuyucuyu yaklaştırmak",
+        "Numarayı gizlemek"
+      ],
+      "answer": 0,
+      "explain": "Prox kartlar kimlik doğrulamadan sabit ID yayar; şifreli karta geçiş klonu engeller.",
+      "source_id": "",
+      "source": "https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0103",
+      "area": "FZ04",
+      "prompt": "Bumping hangi kilit türüne karşı etkilidir?",
+      "context": "",
+      "options": [
+        "Standart pimli silindir",
+        "Elektronik kod kilidi",
+        "Manyetik kilit",
+        "Biyometrik kilit"
+      ],
+      "answer": 0,
+      "explain": "Bumping pim dizisini kinetik enerjiyle iter; bump-dirençli silindir ve güvenlik pimleri azaltır.",
+      "source_id": "",
+      "source": "https://www.cen.eu/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0104",
+      "area": "FZ04",
+      "prompt": "Restricted keyway (kısıtlı profil) ne sağlar?",
+      "context": "",
+      "options": [
+        "Anahtar çoğaltma yetkili kanala bağlanır",
+        "Kilit ömrü uzar",
+        "Kapı kendiliğinden kilitlenir",
+        "Kilit ucuzlar"
+      ],
+      "answer": 0,
+      "explain": "Patentli profil ve kart doğrulamalı kopyalama, yetkisiz çoğaltmayı engeller.",
+      "source_id": "",
+      "source": "https://www.cen.eu/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0105",
+      "area": "FZ04",
+      "prompt": "Dışa açılan kapıda dışarıda kalan menteşe hangi riski doğurur?",
+      "context": "",
+      "options": [
+        "Menteşe pimleri sökülüp kilit atlanabilir",
+        "Kapı ağırlaşır",
+        "Alarm tetiklenir",
+        "Kamera görüşü kapanır"
+      ],
+      "answer": 0,
+      "explain": "Kilit değil kasa/menteşe zayıflığı hedeflenir; pim-koruyucu ve sabit pimli menteşe önerilir.",
+      "source_id": "",
+      "source": "https://www.cen.eu/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0106",
+      "area": "FZ05",
+      "prompt": "PIR dedektörde pet immunity neyi amaçlar?",
+      "context": "",
+      "options": [
+        "Küçük hayvan hareketinde yanlış alarmı azaltır",
+        "Sıcaklığı ölçer",
+        "Kameraya sinyal verir",
+        "Maskelemeyi tespit eder"
+      ],
+      "answer": 0,
+      "explain": "Boy/ağırlık eşiği altındaki hareketler yok sayılır.",
+      "source_id": "",
+      "source": "https://www.cenelec.eu/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0107",
+      "area": "FZ05",
+      "prompt": "Alarm panelinde GSM yedeği hangi riski kapatır?",
+      "context": "",
+      "options": [
+        "Tek iletişim yolunun kesilmesiyle alarmın ulaşmaması",
+        "Sensör bozulması",
+        "Pil bitmesi",
+        "Yanlış alarm"
+      ],
+      "answer": 0,
+      "explain": "Tek yol sabotajla kesilebilir; ikinci yol ve yol denetimi bunu önler.",
+      "source_id": "",
+      "source": "https://www.cenelec.eu/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0108",
+      "area": "FZ05",
+      "prompt": "Cam kırılma dedektörü neyi algılar?",
+      "context": "",
+      "options": [
+        "Cam kırılmasının akustik imzasını",
+        "Kapı açılmasını",
+        "Isı artışını",
+        "Titreşimsiz hareketi"
+      ],
+      "answer": 0,
+      "explain": "Akustik dedektör cam kırılma frekanslarına duyarlıdır; PIR hareketi, kontak açılmayı izler.",
+      "source_id": "",
+      "source": "https://www.cenelec.eu/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0109",
+      "area": "FZ06",
+      "prompt": "Kamerada WDR hangi sorunu giderir?",
+      "context": "",
+      "options": [
+        "Aydınlık/karanlık karşıtlığındaki detay kaybı",
+        "Gece görüşü",
+        "Ses kaydı",
+        "Hareket tespiti"
+      ],
+      "answer": 0,
+      "explain": "WDR aynı karede parlak ve koyu bölgeleri dengeler; arka ışıklı girişlerde kritiktir.",
+      "source_id": "",
+      "source": "https://www.iec.ch/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0110",
+      "area": "FZ06",
+      "prompt": "Kamerada varsayılan şifrenin değişmemesi neye zemin hazırlar?",
+      "context": "",
+      "options": [
+        "Yetkisiz panel erişimi ve botnete katılma",
+        "Disk dolması",
+        "Lens kirlenmesi",
+        "Görüntü gecikmesi"
+      ],
+      "answer": 0,
+      "explain": "Mirai tarzı botnetler varsayılan kimlik bilgileriyle IoT kameraları ele geçirir.",
+      "source_id": "",
+      "source": "https://www.iec.ch/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0111",
+      "area": "FZ07",
+      "prompt": "Rolling code tekrar saldırısına karşı nasıl koruma sağlar?",
+      "context": "",
+      "options": [
+        "Her basışta farklı kod; eski kod geçersiz",
+        "Kod daha uzundur",
+        "Kod şifresizdir",
+        "Sinyal gücü artar"
+      ],
+      "answer": 0,
+      "explain": "Alıcı sayaç senkronunu izler; kaydedilmiş eski kod tekrar kullanılamaz. Sabit kodda tekrar mümkündür.",
+      "source_id": "",
+      "source": "https://www.sdrplay.com/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0112",
+      "area": "FZ07",
+      "prompt": "RollJam benzeri tekniğin temel fikri nedir?",
+      "context": "",
+      "options": [
+        "Kodu alıcıya ulaştırmadan yakalayıp sonra oynatmak",
+        "Kodu kırmak",
+        "Kapıyı zorlamak",
+        "Anahtarı kopyalamak"
+      ],
+      "answer": 0,
+      "explain": "Sinyal bozulup yakalanır, geçerli kod sonradan oynatılır; savunma: zaman pencereli/çift yönlü protokol.",
+      "source_id": "",
+      "source": "https://www.sdrplay.com/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0113",
+      "area": "FZ08",
+      "prompt": "Firmware imzalama ne sağlar?",
+      "context": "",
+      "options": [
+        "Değiştirilmiş yazılımın çalışmasını engeller",
+        "Firmware'i gizler",
+        "Hızı artırır",
+        "Güncellemeyi kapatır"
+      ],
+      "answer": 0,
+      "explain": "Önyükleyici imzayı doğrular; değiştirilmiş görüntü reddedilir.",
+      "source_id": "",
+      "source": "https://owasp.org/www-project-internet-of-things/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0114",
+      "area": "FZ08",
+      "prompt": "Açık bırakılmış SWD portunun riski nedir?",
+      "context": "",
+      "options": [
+        "Debug erişimiyle bellek okuma/yazma",
+        "Isınma",
+        "Wi-Fi zayıflığı",
+        "Ekran bozulması"
+      ],
+      "answer": 0,
+      "explain": "SWD/JTAG üretimde kilitlenmezse bellek ve anahtar okunabilir; readout protection kullanılmalı.",
+      "source_id": "",
+      "source": "https://owasp.org/www-project-internet-of-things/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0115",
+      "area": "FZ09",
+      "prompt": "Sahte BT desteği pretextine karşı en etkili savunma hangisidir?",
+      "context": "",
+      "options": [
+        "Kimlik/ticket doğrulama ve ziyaretçi eşliği",
+        "Daha çok kamera",
+        "Daha güçlü şifre",
+        "Daha yüksek duvar"
+      ],
+      "answer": 0,
+      "explain": "Pretext insan doğrulamasına dayanır; çözüm süreç kontrolüdür (callback, eşlik).",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0116",
+      "area": "FZ09",
+      "prompt": "Tailgating ile piggybacking farkı nedir?",
+      "context": "",
+      "options": [
+        "Piggybacking: yetkili bilerek geçirir; tailgating: fark ettirmeden takip",
+        "İkisi aynıdır",
+        "Tailgating bilerek geçirmektir",
+        "Piggybacking kameradır"
+      ],
+      "answer": 0,
+      "explain": "Piggybacking'de yetkili kişinin rızası vardır; tailgating'de sessiz takip.",
+      "source_id": "",
+      "source": "https://www.social-engineer.org/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0117",
+      "area": "FZ10",
+      "prompt": "Rules of engagement belgesinde sınırlar neden açıkça yazılır?",
+      "context": "",
+      "options": [
+        "Hukuki koruma ve kapsam netliği için",
+        "Raporu uzatmak için",
+        "Maliyeti düşürmek için",
+        "Müşteriyi bilgilendirmemek için"
+      ],
+      "answer": 0,
+      "explain": "Yazılı yetki ve kapsam hem ekibi hem müşteriyi korur; kapsam dışı eylem sorumluluk doğurur.",
+      "source_id": "",
+      "source": "https://www.npsa.gov.uk/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0118",
+      "area": "FZ10",
+      "prompt": "Test sırasında yakalanınca ilk doğru adım nedir?",
+      "context": "",
+      "options": [
+        "Yetki mektubunu göstermek, acil kişiyi aramak",
+        "Kaçmak",
+        "Gizlenmek",
+        "Alarmı kapatmak"
+      ],
+      "answer": 0,
+      "explain": "Yetki belgesi ve doğrulama kişisi gerçek müdahaleyi önler.",
+      "source_id": "",
+      "source": "https://www.npsa.gov.uk/",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0119",
+      "area": "TOOLS",
+      "prompt": "Proxmark5 duyurusunda Proxmark3'e kıyasla eklenen yeni yetenek hangisidir?",
+      "context": "",
+      "options": [
+        "UHF desteği ve yerleşik kablosuz bağlantı",
+        "Yalnızca 125 kHz",
+        "Tek kullanımlık pil",
+        "GPS modülü"
+      ],
+      "answer": 0,
+      "explain": "Proxmark5 UHF, ESP32 tabanlı Wi-Fi/Bluetooth ve Flipper entegrasyonu ekler; yalnızca kendi/yetkili kartlarla kullanılır.",
+      "source_id": "",
+      "source": "https://pasqualepillitteri.it/en/news/9572/proxmark5-vs-proxmark3-differences-2026",
+      "added": "2026-10-04",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0120",
+      "area": "TOOLS",
+      "prompt": "Chameleon Ultra ile Proxmark arasındaki ana kullanım farkı hangisidir?",
+      "context": "",
+      "options": [
+        "Chameleon taşınabilir emülasyon; Proxmark derin analiz",
+        "Chameleon yalnız 2.4 GHz",
+        "Proxmark emüle edemez",
+        "Fark yoktur"
+      ],
+      "answer": 0,
+      "explain": "Chameleon küçük kart emülatörü, Proxmark analiz/protokol araştırma aracıdır; ikisi de yalnızca yetkili/kendi kartlarınızla.",
+      "source_id": "",
+      "source": "https://pasqualepillitteri.it/en/news/9572/proxmark5-vs-proxmark3-differences-2026",
+      "added": "2026-10-04",
+      "author": "daily"
     }
   ]
 }

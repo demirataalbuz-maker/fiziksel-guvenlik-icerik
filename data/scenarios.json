@@ -269,6 +269,44 @@
       "lesson": "Kapı açık kaldı alarmı (door held open) ve canlı izleme/vardiya prosedürü.",
       "source": "https://www.cisa.gov/topics/physical-security",
       "source_id": ""
+    },
+    {
+      "id": "SC-0015",
+      "day": "2026-10-04",
+      "title": "Pasif anahtarsız giriş ve park yeri",
+      "area": "FZ07",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili bir değerlendirmede bir şirketin yönetici otoparkında araçlar pasif anahtarsız giriş kullanıyor. Ekip kendi test aracıyla çalışıyor. Anahtar kolyesi ofiste masada duruyor; araç ise 30 metre ötede park halinde. Çalışanlar anahtarı masada, sinyal yayan halde bırakıyor. Test ekibi kendi iki cihazıyla sinyali köprülemeyi deniyor ve araç kapısı açılıyor. Sistem şifreli ve rolling code kullanıyor.",
+      "steps": [
+        "Anahtar sinyali kapsam içinde ölçülür",
+        "İki röle cihazı arasında mesafe köprülenir",
+        "Araç kapısı yetkili testte açılır"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ07: Şifreleme kırılmadı; röle mesafe sınırını (proximity) aşıyor. Neden: sistem yalnızca yakınlığa güveniyor, sinyal gecikme süresini ölçmüyor.",
+      "lesson": "Hareket sensörlü anahtar (uyku modu), UWB mesafe ölçümü ve anahtarı metal kutuda saklama.",
+      "source": "Genel röle saldırısı literatürü; kurgusal",
+      "source_id": ""
+    },
+    {
+      "id": "SC-0016",
+      "day": "2026-10-04",
+      "title": "Ziyaretçi kimliği ve kayıp rozet",
+      "area": "FZ09",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili testte bir danışmada ziyaretçi rozeti iade edilmeden çıkışta bırakılıyor. Test ekibinden biri ertesi gün bu rozetle girip kimse doğrulamadan koridorlarda dolaşıyor. Rozetin üzerinde tarih yok, fotoğraf yok.",
+      "steps": [
+        "Çıkışta rozet toplanmıyor",
+        "Ertesi gün aynı rozet tekrar kullanılıyor",
+        "Kimlik sorgusu yapılmıyor"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ09: Rozet yaşam döngüsü yönetimi yok. Neden: rozet tek kullanımlık/zaman damgalı değil ve çıkışta iade denetimi yapılmıyor.",
+      "lesson": "Günlük renk/kendi kendini silen rozet, çıkışta iade sayımı, eşlik zorunluluğu.",
+      "source": "Genel fiziksel pentest bulguları; kurgusal",
+      "source_id": ""
     }
   ]
 }

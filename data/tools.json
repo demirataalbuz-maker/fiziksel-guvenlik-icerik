@@ -730,6 +730,26 @@
         "kirmizi-takim"
       ],
       "icon": "💳"
+    },
+    {
+      "id": "TOOL-037",
+      "name": "Proxmark5",
+      "type": "offense",
+      "vendor": "RFID Research Group",
+      "level": "advanced",
+      "areas": [
+        "FZ03"
+      ],
+      "what": "Proxmark3'ün halefi: UHF desteği, ESP32 ile Wi-Fi/Bluetooth, FPGA'lı güçlü işlemci ve Flipper Zero entegrasyonu; Mayıs 2026'da Indiegogo'da duyuruldu.",
+      "how_to_use": "Yalnızca kendi kartlarınız veya yazılı yetkili laboratuvar. Savunma: şifreli/karşılıklı doğrulamalı kartlara geçiş ve okuyucu denetimi. Mahremiyet/izin: başkasının kartı okunamaz.",
+      "install": "Üretici yazılım ve belgeleri RRG deposundan; donanım dağıtımı kampanya sonrası.",
+      "source": "https://pasqualepillitteri.it/en/news/9572/proxmark5-vs-proxmark3-differences-2026",
+      "tags": [
+        "rfid",
+        "uhf",
+        "proxmark"
+      ],
+      "icon": "💳"
     }
   ]
 }
