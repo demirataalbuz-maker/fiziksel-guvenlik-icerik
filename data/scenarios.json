@@ -307,6 +307,44 @@
       "lesson": "Günlük renk/kendi kendini silen rozet, çıkışta iade sayımı, eşlik zorunluluğu.",
       "source": "Genel fiziksel pentest bulguları; kurgusal",
       "source_id": ""
+    },
+    {
+      "id": "SC-0017",
+      "day": "2026-10-08",
+      "title": "Yeniden anahtarlanmayan bina",
+      "area": "FZ04",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili bir değerlendirmede orta ölçekli bir ofisin kilit envanteri incelenir. Eski bir yüklenici çalışanı işten ayrılmış, ancak bina master anahtarının kopyasını iade ettiği kayıtlarda görünmemektedir. Anahtar teslim tutanakları eksik, kilit silindirleri 6 yıldır değişmemiştir. Yöneticiler 'zaten kimse bilmez' diyerek yeniden anahtarlamayı ertelemiştir. Denetim kayıtları mekanik kilitler için tutulmamaktadır.",
+      "steps": [
+        "Anahtar envanteri istenir",
+        "Teslim tutanakları karşılaştırılır",
+        "Silindir yaşı ve profili kontrol edilir"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ04: Anahtar kontrol prosedürü eksik; kayıp/iade edilmeyen master anahtar sonrası yeniden anahtarlama yapılmamış. Neden: mekanik anahtarın kimde olduğu izlenemez, tek kopya tüm binayı açar.",
+      "lesson": "Anahtar teslim/iade kaydı, imzalı envanter, ayrılışta yeniden anahtarlama ve kopyalanması kısıtlı profil kullan.",
+      "source": "Fiziksel güvenlik anahtar kontrolü genel uygulaması (kurgu)",
+      "source_id": ""
+    },
+    {
+      "id": "SC-0018",
+      "day": "2026-10-08",
+      "title": "Saat farkı olan kayıtlar",
+      "area": "FZ06",
+      "truth": "composite",
+      "level": "advanced",
+      "story": "Bir yetkili tatbikat sonrası olay incelemesinde kapı erişim logu ile kamera kaydı karşılaştırılır. Kapı sisteminde 02:14'te 'door held' alarmı vardır, kameranın zaman damgası ise 02:09'u gösterir. Kameralar NTP'ye bağlı değildir ve aylardır sapmıştır. Güvenlik ekibi hangi kişinin kapıyı tuttuğunu kesin biçimde eşleştiremez. Olay raporu bu yüzden belirsiz kalır.",
+      "steps": [
+        "Log zaman damgaları çıkarılır",
+        "Kamera saatleri karşılaştırılır",
+        "Sapma ölçülür"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ06: Kamera saati merkezi zaman kaynağıyla senkronize değil. Neden: olay korelasyonu ve adli değer, ortak zaman ekseni olmadan zayıflar.",
+      "lesson": "Tüm kapı, alarm ve kamera cihazlarını aynı NTP kaynağına bağla ve sapmayı izle.",
+      "source": "NTP / CCTV adli en iyi uygulamaları (kurgu)",
+      "source_id": ""
     }
   ]
 }

@@ -2160,6 +2160,564 @@
       "source": "https://pasqualepillitteri.it/en/news/9572/proxmark5-vs-proxmark3-differences-2026",
       "added": "2026-10-04",
       "author": "daily"
+    },
+    {
+      "id": "Q-0121",
+      "area": "FZ01",
+      "prompt": "Pasif keşif ile aktif keşif arasındaki temel fark nedir?",
+      "context": "",
+      "options": [
+        "Aktif keşif yetki mektubu gerektirmez",
+        "Pasif keşifte hedef sisteme paket gönderilir",
+        "Pasif keşifte hedefle hiç etkileşime girilmez",
+        "Aktif keşifte yalnızca açık kaynak kullanılır"
+      ],
+      "answer": 2,
+      "explain": "Pasif keşif halka açık kaynaklardan toplanır, hedefle temas yoktur; aktif keşif doğrudan etkileşimdir ve kapsam/yetki gerektirir.",
+      "source_id": "",
+      "source": "https://citation.thinkst.com/talk/102485",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0122",
+      "area": "FZ01",
+      "prompt": "Etkinlik fotoğraflarında rozet tasarımının görünmesine karşı en etkili önlem hangisidir?",
+      "context": "",
+      "options": [
+        "Fotoğraf paylaşımını yalnızca gece yapmak",
+        "Rozet rengini her yıl değiştirmek",
+        "Fotoğraflara filigran eklemek",
+        "Rozet görselini paylaşmayı kısıtlayan politika ve farkındalık"
+      ],
+      "answer": 3,
+      "explain": "Savunma kaynağı azaltmaktır: rozet görseli paylaşım politikası; filigran rozet tasarımını gizlemez.",
+      "source_id": "",
+      "source": "https://citation.thinkst.com/talk/102485",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0123",
+      "area": "FZ01",
+      "prompt": "Yetkili keşifte çalışan vardiya saatlerini gözlemlemek hangi amaca hizmet eder?",
+      "context": "",
+      "options": [
+        "Ağ trafiğini şifrelemek",
+        "Gözetim ve trafik boşluklarını savunma raporuna yazmak",
+        "Alarm panelinin firmware sürümünü bulmak",
+        "Kamera çözünürlüğünü ölçmek"
+      ],
+      "answer": 1,
+      "explain": "Vardiya ve trafik örüntüsü, yetkili kapsamda gözetim boşluklarını raporlamak için kullanılır.",
+      "source_id": "",
+      "source": "https://citation.thinkst.com/talk/102485",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0124",
+      "area": "FZ01",
+      "prompt": "OSINT bulgusunu raporlarken en doğru yaklaşım hangisidir?",
+      "context": "",
+      "options": [
+        "Tahmini kesin bilgi gibi sunmak",
+        "Kaynağı gizli tutmak",
+        "Kaynağı, tarihi ve güven düzeyini belirtmek",
+        "Yalnızca sonucu yazmak"
+      ],
+      "answer": 2,
+      "explain": "Doğrulanabilirlik için kaynak, zaman ve güven düzeyi kaydedilir; tahmin ile doğrulanmış bilgi ayrılır.",
+      "source_id": "",
+      "source": "https://citation.thinkst.com/talk/102485",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0125",
+      "area": "FZ02",
+      "prompt": "CPTED'deki doğal gözetim ilkesine hangisi örnektir?",
+      "context": "",
+      "options": [
+        "Girişe turnike yerleştirmek",
+        "Girişe bakan cam cepheli ofis ve iyi aydınlatma",
+        "Girişe yüksek ve opak duvar örmek",
+        "Girişe güvenlik tabelası asmak"
+      ],
+      "answer": 1,
+      "explain": "Doğal gözetim meşru kullanıcıların alanı görebilmesini sağlar; opak duvar gözetimi azaltır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Crime_prevention_through_environmental_design",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0126",
+      "area": "FZ02",
+      "prompt": "Gece aydınlatmasında kör nokta bulgusu en çok hangi riski büyütür?",
+      "context": "",
+      "options": [
+        "Çitin paslanması",
+        "Yangın alarmı gecikmesi",
+        "Gözetimsiz yaklaşma ve kamera görüntüsünün bozulması",
+        "Elektrik faturasının artması"
+      ],
+      "answer": 2,
+      "explain": "Kör noktalar insan ve kamera tespitini azaltır; aydınlatma kamerayla birlikte tasarlanmalıdır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Crime_prevention_through_environmental_design",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0127",
+      "area": "FZ02",
+      "prompt": "Bariyerin gecikme süresi neyle karşılaştırılmalıdır?",
+      "context": "",
+      "options": [
+        "Kameranın kayıt süresiyle",
+        "Kapının açılma süresiyle",
+        "Alarmın susma süresiyle",
+        "Müdahale ekibinin varış süresiyle"
+      ],
+      "answer": 3,
+      "explain": "Tespit + gecikme + müdahale: gecikme müdahale süresinden kısaysa katman işe yaramaz.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Physical_security",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0128",
+      "area": "FZ03",
+      "prompt": "MIFARE DESFire EV2 proximity check özelliği hangi saldırıya karşıdır?",
+      "context": "",
+      "options": [
+        "Wiegand dinleme",
+        "Röle (relay) saldırısı",
+        "PIN kaba kuvvet denemesi",
+        "Nested attack"
+      ],
+      "answer": 1,
+      "explain": "Proximity check kart-okuyucu yanıt süresini ölçerek rölelenen iletişimi tespit etmeyi amaçlar.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/MIFARE",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0129",
+      "area": "FZ03",
+      "prompt": "OSDP Secure Channel neyi sağlar?",
+      "context": "",
+      "options": [
+        "Kartın 125 kHz'de çalışmasını",
+        "Kapı kilidinin fail-safe olmasını",
+        "Okuyucu-denetleyici arasında şifreli ve doğrulanmış iletişim",
+        "Kartların otomatik yenilenmesini"
+      ],
+      "answer": 2,
+      "explain": "OSDP v2 Secure Channel AES tabanlı şifreleme ve doğrulama sunar; Wiegand'da yoktur.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Open_Supervised_Device_Protocol",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0130",
+      "area": "FZ03",
+      "prompt": "UID tabanlı doğrulama neden zayıftır?",
+      "context": "",
+      "options": [
+        "UID çok uzundur",
+        "UID her okumada değişir",
+        "UID şifrelidir",
+        "UID gizli anahtar içermez, taklit edilebilir"
+      ],
+      "answer": 3,
+      "explain": "Yalnızca UID'ye güvenen sistemde UID sabittir ve kriptografik olarak korunmaz.",
+      "source_id": "",
+      "source": "https://blog.nviso.eu/2017/01/11/a-practical-guide-to-rfid-badge-copying/",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0131",
+      "area": "FZ03",
+      "prompt": "HID iCLASS Legacy ile Seos arasındaki fark hangisidir?",
+      "context": "",
+      "options": [
+        "İkisi de aynı ortak anahtarı kullanır",
+        "Seos modern kriptografi ve yönetilebilir kimlik kullanır",
+        "Legacy daha yeni ve güvenlidir",
+        "Fark yalnızca kart rengidir"
+      ],
+      "answer": 1,
+      "explain": "Legacy iCLASS'ın anahtar yönetimi zayıflıkları yayımlanmıştır; Seos modern protokole geçiştir.",
+      "source_id": "",
+      "source": "https://blog.nviso.eu/2017/01/11/a-practical-guide-to-rfid-badge-copying/",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0132",
+      "area": "FZ04",
+      "prompt": "Master key sisteminin ana riski nedir?",
+      "context": "",
+      "options": [
+        "Kilit ömrü kısalır",
+        "Anahtarlar ağırdır",
+        "Kilitler ses çıkarır",
+        "Tek anahtarın kaybı çok sayıda kapıyı etkiler"
+      ],
+      "answer": 3,
+      "explain": "Master key hiyerarşisinde kayıp geniş etki yaratır; yeniden anahtarlama maliyetlidir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Master_keying",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0133",
+      "area": "FZ04",
+      "prompt": "Kapı kasasında bypass bulgusu hangisidir?",
+      "context": "",
+      "options": [
+        "Kapının ağır olması",
+        "Kilidin gıcırdaması",
+        "Kilit sağlam olsa da mandalın dışarıdan itilebilmesi",
+        "Anahtarın kaybolması"
+      ],
+      "answer": 2,
+      "explain": "Bypass kilidi yenmeden mekanizmayı atlayan zayıflıktır (ör. korumasız mandal).",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Lock_bypass",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0134",
+      "area": "FZ04",
+      "prompt": "Elektronik kilitte denetim izi neden değerlidir?",
+      "context": "",
+      "options": [
+        "Kilidi fiziksel olarak sağlamlaştırır",
+        "Anahtar kopyalamayı engeller",
+        "Kimin ne zaman açtığını göstererek soruşturmaya imkân verir",
+        "Pil ömrünü uzatır"
+      ],
+      "answer": 2,
+      "explain": "Audit trail tespit ve adli analiz sağlar; fiziksel direnci artırmaz.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Access_control",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0135",
+      "area": "FZ04",
+      "prompt": "Kısıtlı anahtar profili ile güvenlik pimi arasındaki ayrım nedir?",
+      "context": "",
+      "options": [
+        "İkisi aynı işlevdir",
+        "Pimler anahtar yetkisini yönetir",
+        "Profil yalnızca estetiktir",
+        "Profil yetkisiz anahtar çoğaltmayı, pimler manipülasyonu zorlaştırır"
+      ],
+      "answer": 3,
+      "explain": "Biri yetkisiz kopyalamaya, diğeri manipülasyon tekniklerine karşıdır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Pin_tumbler_lock",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0136",
+      "area": "FZ05",
+      "prompt": "Alarm panelinde tamper girişi neyi algılar?",
+      "context": "",
+      "options": [
+        "Kasa veya sensör kapağının açılması",
+        "Hareketi",
+        "Camın kırılmasını",
+        "Yangını"
+      ],
+      "answer": 0,
+      "explain": "Tamper devresi kasa açma/söküm girişimini bildirir; sistem silahsız olsa da çalışır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Alarm_device",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0137",
+      "area": "FZ05",
+      "prompt": "Çift teknolojili (PIR+mikrodalga) dedektörün amacı nedir?",
+      "context": "",
+      "options": [
+        "Yanlış alarmı azaltmak için iki koşulu birlikte aramak",
+        "Kablosuz bağlanmak",
+        "Menzili ikiye katlamak",
+        "Pil ömrünü uzatmak"
+      ],
+      "answer": 0,
+      "explain": "AND mantığı tek teknolojinin tetiklenmesini yok sayarak yanlış alarmı azaltır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Motion_detector",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0138",
+      "area": "FZ05",
+      "prompt": "Alarm sinyalinin yalnızca sabit telefon hattından iletilmesi hangi riski doğurur?",
+      "context": "",
+      "options": [
+        "Panelin ısınması",
+        "Hat kesilirse bildirimin ulaşmaması",
+        "Sensörlerin yanlış alarm vermesi",
+        "Sirenin sessiz kalması"
+      ],
+      "answer": 1,
+      "explain": "Tek iletişim yolu tek hata noktasıdır; GSM/IP yedekli ve denetimli hat gerekir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Alarm_device",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0139",
+      "area": "FZ05",
+      "prompt": "Alarm hattında EOL direnci hangi ayrımı yapabilir?",
+      "context": "",
+      "options": [
+        "Nem düzeyini",
+        "Normal, açık devre ve kısa devre durumlarını",
+        "Ses seviyesini",
+        "Sıcaklığı"
+      ],
+      "answer": 1,
+      "explain": "EOL direnci hat denetimiyle kesme/kısa devre girişimini tespit ettirir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Alarm_device",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0140",
+      "area": "FZ06",
+      "prompt": "Kameranın IR cut filtresi ne yapar?",
+      "context": "",
+      "options": [
+        "Ses kaydı alır",
+        "Görüntüyü şifreler",
+        "Kayıt süresini uzatır",
+        "Gündüz renk doğruluğu için IR'yi keser, gece kaldırır"
+      ],
+      "answer": 3,
+      "explain": "Gündüz IR kesilir; gece ışığa duyarlılık için filtre kaldırılır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Closed-circuit_television",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0141",
+      "area": "FZ06",
+      "prompt": "Kamera kayıtlarında NTP senkronizasyonu neden önemlidir?",
+      "context": "",
+      "options": [
+        "Olay korelasyonu ve adli güvenilirlik için",
+        "Disk tasarrufu için",
+        "Çözünürlüğü artırmak için",
+        "Gece görüşü için"
+      ],
+      "answer": 0,
+      "explain": "Kapı, alarm ve kamera olayları aynı zaman ekseninde birleştirilmelidir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Network_Time_Protocol",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0142",
+      "area": "FZ07",
+      "prompt": "Sabit kodlu 433 MHz kumandada tekrar saldırısı neden mümkündür?",
+      "context": "",
+      "options": [
+        "Sinyal şifrelidir",
+        "Her basışta aynı kod gönderilir",
+        "Frekans değişir",
+        "Kod her seferinde değişir"
+      ],
+      "answer": 1,
+      "explain": "Sabit kodda yakalanan sinyal tekrar oynatılabilir; rolling code bunu azaltır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Rolling_code",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0143",
+      "area": "FZ07",
+      "prompt": "RTL-SDR için yasal ve etik kullanım hangisidir?",
+      "context": "",
+      "options": [
+        "Başkasının kumandasını kopyalamak",
+        "Komşunun sinyallerini kaydetmek",
+        "Şifreli haberleşmeyi dinlemek",
+        "Kendi alarm sensörlerinin yayınını gözlemlemek"
+      ],
+      "answer": 3,
+      "explain": "Kendi cihazını gözlemlemek kapsam içidir; üçüncü taraf iletişimi dinlemek yasaktır.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Software-defined_radio",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0144",
+      "area": "FZ08",
+      "prompt": "Üretim cihazında JTAG portunun kapatılması neden önerilir?",
+      "context": "",
+      "options": [
+        "Boyut küçültmek",
+        "Düşük seviyeli hata ayıklama erişimini engellemek",
+        "Kablosuz hızını artırmak",
+        "Pil tasarrufu"
+      ],
+      "answer": 1,
+      "explain": "Açık JTAG/SWD firmware okuma ve bellek erişimine kapı açabilir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/JTAG",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0145",
+      "area": "FZ08",
+      "prompt": "Side-channel analizi neye dayanır?",
+      "context": "",
+      "options": [
+        "Kablo uzunluğuna",
+        "Güç tüketimi ve zamanlama gibi dolaylı sızıntılara",
+        "Ağ paketlerine",
+        "Etiket rengine"
+      ],
+      "answer": 1,
+      "explain": "Fiziksel sızıntılar gizli anahtar bilgisi ortaya çıkarabilir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Side-channel_attack",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0146",
+      "area": "FZ09",
+      "prompt": "Otorite pretextine karşı en iyi savunma hangisidir?",
+      "context": "",
+      "options": [
+        "Rozet rengine bakmak",
+        "Kıyafete güvenmek",
+        "Daha fazla nezaket",
+        "Bağımsız kanalla doğrulama prosedürü"
+      ],
+      "answer": 3,
+      "explain": "Otorite iddiası bağımsız kanaldan doğrulanmalıdır; görsel işaretler taklit edilebilir.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Social_engineering_(security)",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0147",
+      "area": "FZ09",
+      "prompt": "Ziyaretçi eskortu politikasının amacı nedir?",
+      "context": "",
+      "options": [
+        "Ziyaretçinin yetkisiz alanlara geçmesini engellemek",
+        "Ziyaretçiyi ağırlamak",
+        "Rozet maliyetini azaltmak",
+        "Park yerini düzenlemek"
+      ],
+      "answer": 0,
+      "explain": "Eskort yetkisiz gezinme riskini azaltan idari bir kontroldür.",
+      "source_id": "",
+      "source": "https://en.wikipedia.org/wiki/Social_engineering_(security)",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0148",
+      "area": "FZ10",
+      "prompt": "Yetki mektubunun işlevi nedir?",
+      "context": "",
+      "options": [
+        "Test ekibinin yetkisini belgelemek ve acil doğrulama sağlamak",
+        "Raporu süslemek",
+        "Müşteriyi bilgilendirmemek",
+        "Testi sınırsız kılmak"
+      ],
+      "answer": 0,
+      "explain": "Yetki belgesi ve acil iletişim kişisi yanlış anlaşılmayı ve hukuki riski azaltır.",
+      "source_id": "",
+      "source": "https://citation.thinkst.com/talk/102485",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0149",
+      "area": "FZ10",
+      "prompt": "Kanıt fotoğrafı toplarken öncelikli kural nedir?",
+      "context": "",
+      "options": [
+        "Fotoğrafları kişisel telefonda saklamak",
+        "Mümkün olduğunca çok kişiyi çekmek",
+        "Rozet numaralarını yayımlamak",
+        "Kişisel verileri (yüz, kimlik) gizlemek"
+      ],
+      "answer": 3,
+      "explain": "Veri minimizasyonu ve mahremiyet gözetilir.",
+      "source_id": "",
+      "source": "https://citation.thinkst.com/talk/102485",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0150",
+      "area": "TOOLS",
+      "prompt": "Proxmark3'ün Flipper Zero'ya göre güçlü yanı nedir?",
+      "context": "",
+      "options": [
+        "Daha küçük ekran",
+        "Derin protokol analizi ve düşük seviyeli RFID araştırması",
+        "Yalnızca NFC okuması",
+        "Oyun desteği"
+      ],
+      "answer": 1,
+      "explain": "Proxmark araştırma odaklı, Flipper çok amaçlı taşınabilirdir.",
+      "source_id": "",
+      "source": "https://github.com/RfidResearchGroup/proxmark3",
+      "added": "2026-10-08",
+      "author": "daily"
+    },
+    {
+      "id": "Q-0151",
+      "area": "TOOLS",
+      "prompt": "Kendi kartını test ederken savunma açısından en değerli çıktı hangisidir?",
+      "context": "",
+      "options": [
+        "Kart fiyatı",
+        "Kartın rengi",
+        "Okuma sesi",
+        "Kart tipi, şifreleme durumu ve klonlanabilirlik bulgusu"
+      ],
+      "answer": 3,
+      "explain": "Amaç kart tipini ve zafiyetini belirleyip geçiş önerisi sunmaktır.",
+      "source_id": "",
+      "source": "https://blog.nviso.eu/2017/01/11/a-practical-guide-to-rfid-badge-copying/",
+      "added": "2026-10-08",
+      "author": "daily"
     }
   ]
 }
