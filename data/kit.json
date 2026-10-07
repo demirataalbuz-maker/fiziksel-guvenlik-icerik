@@ -228,6 +228,18 @@
       "example": "Bölmeli alet çantası veya organizer kutu.",
       "note": "",
       "source": ""
+    },
+    {
+      "id": "KIT-020",
+      "name": "RTL-SDR Blog V4 (TCXO + anten kiti)",
+      "icon": "📻",
+      "category": "RF",
+      "priority": "onerilen",
+      "cost": "~40$ (anten setli) / ~30$ (yalın)",
+      "why": "RF ve SDR projelerinde (433/315 MHz sensör gözlemi, spektrum izleme) sinyal yakalamanın temel aracı. V3'e göre geliştirilmiş HF alımı, triplekser ön-uç ve 1 ppm TCXO ile çok daha kararlı; FZ07 RF ve sinyal gözlem projeleri için ideal giriş donanımı.",
+      "example": "RTL-SDR Blog V4 (R828D/RTL2832U) — dongle + teleskopik anten kiti; 500 kHz–1.766 GHz. Resmi mağaza veya yetkili satıcıdan al.",
+      "note": "Mevcut genel 'RTL-SDR dongle' kaleminin üstüne somut, kararlı ve uygun fiyatlı model önerisi; SDR++/SDR# ile Windows/Linux/Pi uyumlu.",
+      "source": "https://www.rtl-sdr.com/rtl-sdr-blog-v4-dongle-initial-release/"
     }
   ]
 }

@@ -750,6 +750,29 @@
         "proxmark"
       ],
       "icon": "💳"
+    },
+    {
+      "id": "TOOL-038",
+      "name": "LoRa Mesh Düğümü (LilyGO T-Beam / Heltec + Meshtastic)",
+      "type": "both",
+      "vendor": "LilyGO / Heltec (Meshtastic açık kaynak)",
+      "level": "advanced",
+      "areas": [
+        "FZ07",
+        "FZ08"
+      ],
+      "what": "ESP32 tabanlı, uzun menzilli düşük güçlü radyo (LoRa) düğümü; açık kaynak Meshtastic bellenimiyle çalışır. Hem saha ekibi dayanıklı iletişimi hem de mesh ağ zafiyet/jamming farkındalığını kendi ekipmanınla incelemek için.",
+      "how_to_use": "Yalnızca kendi test ağında: benzersiz kanal anahtarı üretip rotasyonu, varsayılan-anahtar riskini ve dar bant dayanıklılığını gözlemle; bant-dışı kanalın ağ izlemeden nasıl kaçtığını savunma perspektifiyle değerlendir.",
+      "install": "Meshtastic web/CLI flasher ile bellenimi yükle; iki düğümle kendi kapalı ağını kur.",
+      "source": "https://meshtastic.org/docs/getting-started/",
+      "tags": [
+        "lora",
+        "meshtastic",
+        "oob",
+        "rf",
+        "mesh"
+      ],
+      "icon": "📡"
     }
   ]
 }
