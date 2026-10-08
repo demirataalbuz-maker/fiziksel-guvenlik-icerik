@@ -345,6 +345,43 @@
       "lesson": "Tüm kapı, alarm ve kamera cihazlarını aynı NTP kaynağına bağla ve sapmayı izle.",
       "source": "NTP / CCTV adli en iyi uygulamaları (kurgu)",
       "source_id": ""
+    },
+    {
+      "id": "SC-0019",
+      "day": "2026-10-08",
+      "title": "Okuyucu hattındaki açık kablo",
+      "area": "FZ03",
+      "truth": "composite",
+      "level": "core",
+      "story": "Yetkili bir değerlendirmede, bir ofisin kart okuyucusu Wiegand ile kontrolöre bağlıydı. Okuyucunun arkasındaki kapak tamper anahtarsızdı ve kablo tavan boşluğunda korumasız duruyordu. Ekip, kendi test ekipmanıyla hattın verisinin şifresiz aktığını gösterdi. Okuyucu ile kontrolör arasında denetim yoktu. Yönetim kart sistemini güvenli sanıyordu.",
+      "steps": [
+        "Okuyucu kablosu gözlendi",
+        "Protokol Wiegand olarak doğrulandı",
+        "Tamper ve şifreleme yokluğu tespit edildi"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ03: okuyucu-kontrolör hattı şifresiz Wiegand ve tamper yok; veri dinlenebilir/enjekte edilebilir.",
+      "lesson": "OSDP Secure Channel'a geçin, okuyucuya tamper ekleyin, kabloyu korunaklı yola alın.",
+      "source": "Kurgu; Wiegand/OSDP farkına dayalı",
+      "source_id": ""
+    },
+    {
+      "id": "SC-0020",
+      "day": "2026-10-08",
+      "title": "Susturulan bölgenin hikayesi",
+      "area": "FZ05",
+      "truth": "composite",
+      "level": "core",
+      "story": "Bir depoda alarm sık yanlış veriyordu; bakım ekibi arka kapı bölgesini bypass etti ve unuttu. Aylar sonra yetkili testte bu bölge hâlâ bypass durumdaydı. Panel loglarında bypass kaydı vardı ama kimse incelemiyordu. Test ekibi bunu raporladı.",
+      "steps": [
+        "Panel durumu incelendi",
+        "Bypass logu bulundu"
+      ],
+      "question": "Kusur nerede?",
+      "answer": "FZ05: bypass sürecinde süre sınırı/inceleme yok; alarm yorgunluğuyla birleşmiş.",
+      "lesson": "Bypass'lara otomatik süre sonu, günlük bypass raporu ve yanlış alarmın kök nedeni giderilmeli.",
+      "source": "Kurgu",
+      "source_id": ""
     }
   ]
 }
